@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abc284ae8b5c3945887b1e7709eccf5, type: 3}
   m_Name: YellowBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
-  prefab: {fileID: 1581828840084113728, guid: 8ebffbc7aff5c19468cd3ccddb088b52, type: 3}
+  prefab: {fileID: 1581828840084113728, guid: 5674a8bf8f6ac984c871ffe5bffd7a71, type: 3}
   hitPoints: 1
   score: 10
   unbreakable: 0

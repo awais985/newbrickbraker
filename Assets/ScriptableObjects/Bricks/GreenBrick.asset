@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abc284ae8b5c3945887b1e7709eccf5, type: 3}
   m_Name: GreenBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
-  prefab: {fileID: 1581828840084113728, guid: d12c1a595193f9244bf80b46ee5ff3c6, type: 3}
+  prefab: {fileID: 1581828840084113728, guid: 08a4809e85701374185625d4cfff4ac2, type: 3}
   hitPoints: 1
   score: 10
   unbreakable: 0

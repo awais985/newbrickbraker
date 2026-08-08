@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abc284ae8b5c3945887b1e7709eccf5, type: 3}
   m_Name: DoubleHitBrek
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
-  prefab: {fileID: 1581828840084113728, guid: d1ec352a26271564db00252f35208b87, type: 3}
+  prefab: {fileID: 1581828840084113728, guid: 17c7f42ede9632a4d82390ee55a79fe4, type: 3}
   hitPoints: 2
   score: 10
   unbreakable: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abc284ae8b5c3945887b1e7709eccf5, type: 3}
   m_Name: SoldBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
-  prefab: {fileID: 1581828840084113728, guid: dc524b0fc2b75e44ebc4ef20ccf8b4b8, type: 3}
+  prefab: {fileID: 1581828840084113728, guid: 912e97ee300546c43912ac92faba2b95, type: 3}
   hitPoints: 0
   score: 10
   unbreakable: 1
