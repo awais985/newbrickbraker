@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abc284ae8b5c3945887b1e7709eccf5, type: 3}
+  m_Name: DoubleHitBrek
+  m_EditorClassIdentifier: Assembly-CSharp::BrickData
+  prefab: {fileID: 1581828840084113728, guid: d1ec352a26271564db00252f35208b87, type: 3}
+  hitPoints: 2
+  score: 10
+  unbreakable: 0
