@@ -5,7 +5,7 @@ using UnityEngine;
 public class BrickSpawner : MonoBehaviour
 {
     //// Inspector se assign hone wala Brick Prefab
-    [SerializeField] private GameObject brickPrefab;
+    //[SerializeField] private GameObject brickPrefab;
 
     //// Grid mein total kitni rows hongi
     //[SerializeField] private int rows = 1;
@@ -162,6 +162,14 @@ public class BrickSpawner : MonoBehaviour
         // Agar saari bricks destroy ho chuki hain
         if (remainingBricks == 0)
         {
+            if (LevelManager.instance != null)
+            { 
+                bool isNext = LevelManager.instance.CheckNextLevelAvailable();
+                if (isNext)
+                {
+                    LevelManager.instance.UnlockNextLevel();
+                }
+            }
             StartCoroutine(ShowLevelCompleteAfterDelay());
         }
     }
@@ -170,6 +178,7 @@ public class BrickSpawner : MonoBehaviour
     {
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(2f);
+
         if (UIManager.instance != null)
         {
             // Level Complete panel show karna

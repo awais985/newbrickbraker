@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DoubleHitBrek
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
   prefab: {fileID: 1581828840084113728, guid: 17c7f42ede9632a4d82390ee55a79fe4, type: 3}
-  hitPoints: 2
+  hitPoints: 1
   score: 10
   unbreakable: 0

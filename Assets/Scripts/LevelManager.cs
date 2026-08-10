@@ -22,8 +22,30 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        currentIndex = 0;
+        int selectedLevel = PlayerPrefs.GetInt("SelectedLevel", 0);
+
+        currentIndex = Mathf.Clamp(
+            selectedLevel,
+            0,
+            levels.Length - 1
+        );
+
+
         LoadLevel(currentIndex);
+    }
+
+    public int TotalLevels()
+    {
+        return levels.Length;
+    }
+
+    public bool CheckNextLevelAvailable()
+    {
+        if (currentIndex < levels.Length - 1)
+        {
+            return true;
+        }
+        return false;
     }
 
     public bool LevelCompleted()
@@ -39,7 +61,6 @@ public class LevelManager : MonoBehaviour
 
         return false;
     }
-
     public void LoadLevel(int index)
     {
         brickSpawner.ClearLevel();
@@ -47,5 +68,26 @@ public class LevelManager : MonoBehaviour
         currentLevelData = levels[index];
         
         brickSpawner.BuildLevel(currentLevelData);
+    }
+    public void RestartCurrentLevel()
+    {
+        LoadLevel(currentIndex);
+    }
+    public void UnlockNextLevel()
+    {
+       
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
+
+        int nextLevelNumber = currentIndex + 2;
+
+        if (nextLevelNumber > unlockedLevel)
+        {
+            PlayerPrefs.SetInt(
+                "UnlockedLevel",
+                nextLevelNumber
+            );
+
+            PlayerPrefs.Save();
+        }
     }
 }

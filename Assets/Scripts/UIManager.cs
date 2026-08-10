@@ -48,10 +48,10 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        if(levelCompletePanel != null)
+        if (levelCompletePanel != null)
         {
             // Game start par Level Complete panel hidden rakhna
-            levelCompletePanel.SetActive(false);
+//            levelCompletePanel.SetActive(false);
         }
 
         if (gameCompletePanel != null)
@@ -77,9 +77,13 @@ public class UIManager : MonoBehaviour
     // to yeh method call hoga
     public void ShowLevelComplete()
     {
-        if(levelCompletePanel != null && AudioClipManager.instance != null)
+        if(AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayLevelComplete();
+
+        }
+        if (levelCompletePanel != null)
+        {
             // Level Complete panel visible karna
             levelCompletePanel.SetActive(true);
 
@@ -90,9 +94,12 @@ public class UIManager : MonoBehaviour
 
     public void HideLevelComplete()
     {
-        if (levelCompletePanel != null && AudioClipManager.instance != null)
+        if(AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayLevelComplete();
+        }
+        if (levelCompletePanel != null)
+        {
             // Level Complete panel visible karna
             levelCompletePanel.SetActive(false);
 
@@ -106,9 +113,12 @@ public class UIManager : MonoBehaviour
     // to yeh method call hoga
     public void ShowGameComplete()
     {
-        if(levelCompletePanel != null && gameCompletePanel!= null && AudioClipManager.instance != null)
+        if(AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayLevelComplete();
+        }
+        if(levelCompletePanel != null && gameCompletePanel!= null)
+        {
 
             // Pehle Level Complete panel hide karna
             // taake dono panels ek saath show na hon
@@ -125,9 +135,12 @@ public class UIManager : MonoBehaviour
 
     public void UpdateLivesText(int lives)
     {
-        if(liveText != null && AudioClipManager.instance != null)
+        if(AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayLoseLife();
+        }
+        if(liveText != null)
+        {
             liveText.text = "Lives: " + lives.ToString();
         }
     }
@@ -145,9 +158,12 @@ public class UIManager : MonoBehaviour
 
     public void ShowPausePanel()
     {
-        if(pausePanel != null && pauseButton != null && AudioClipManager.instance != null)  
+        if(AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayPanelSound();
+        }
+        if(pausePanel != null && pauseButton != null)  
+        {
             pausePanel.SetActive(true);
             pauseButton.SetActive(false);
         }
@@ -163,9 +179,12 @@ public class UIManager : MonoBehaviour
     }
 
     public void ShowSettingPanel() {
-        if(settingsPanel != null && AudioClipManager.instance != null)
+        if(AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayPanelSound();
+        }
+        if(settingsPanel != null)
+        {
 
             settingsPanel.SetActive(true);
         }

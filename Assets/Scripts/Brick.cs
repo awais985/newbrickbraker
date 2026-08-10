@@ -106,7 +106,7 @@ public class Brick : MonoBehaviour
         while (spriteRenderer.color.a > 0f)
         {
             Color color = spriteRenderer.color;
-            color.a = Mathf.MoveTowards(color.a, 0f, fadeSpeed * Time.deltaTime);
+            color.a = Mathf.MoveTowards(color.a, 0f, fadeSpeed * Time.unscaledDeltaTime);
 
             spriteRenderer.color = color;
 

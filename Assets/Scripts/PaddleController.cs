@@ -20,6 +20,8 @@ public class PaddleController : MonoBehaviour
 
     // Isi Paddle GameObject ke Rigidbody2D ka reference
     private Rigidbody2D rb;
+    private Vector2 startPosition;
+
 
     private void Awake()
     {
@@ -34,6 +36,11 @@ public class PaddleController : MonoBehaviour
                 "Paddle GameObject par Rigidbody2D component nahi laga."
             );
         }
+    }
+
+    private void Start()
+    {
+        startPosition = transform.position;
     }
 
     private void Update()
@@ -85,5 +92,10 @@ public class PaddleController : MonoBehaviour
         // Rigidbody2D physics system ke through
         // Paddle ko calculated position par move karna
         rb.MovePosition(newPosition);
+    }
+
+    public void ResetPaddle()
+    {
+        startPosition = transform.position;
     }
 }
