@@ -6,7 +6,7 @@ public class LevelSelectUI : MonoBehaviour
 {
     [SerializeField] private GameObject levelButtonPrefab;
     [SerializeField] private Transform buttonParent;
-    private int totalLevels;
+    [SerializeField] private int totalLevels = 10;
     //[SerializeField] private GameObject[] lockIcons;
 
     private void Start()
@@ -16,10 +16,6 @@ public class LevelSelectUI : MonoBehaviour
 
     private void GenerateLevelButtons()
     {
-        if(LevelManager.instance != null)
-        {
-            totalLevels = LevelManager.instance.TotalLevels();
-        }
         for (int i = 0; i < totalLevels; i++)
         {
             int levelNumber = i + 1;
@@ -28,20 +24,15 @@ public class LevelSelectUI : MonoBehaviour
 
             bool unlocked = levelNumber <= unlockedLevel;
 
-            GameObject newButton =
-                Instantiate(levelButtonPrefab, buttonParent);
+            GameObject newButton = Instantiate(levelButtonPrefab, buttonParent);
 
-            LevelButtonUI buttonUI =
-                newButton.GetComponent<LevelButtonUI>();
+            LevelButtonUI buttonUI = newButton.GetComponent<LevelButtonUI>();
 
             buttonUI.Setup(levelNumber, unlocked);
 
-            Button button =
-                newButton.GetComponent<Button>();
+            Button button = newButton.GetComponent<Button>();
 
-            button.onClick.AddListener(() =>
-                SelectLevel(levelNumber)
-            );
+            button.onClick.AddListener(() => SelectLevel(levelNumber));
         }
     }
 

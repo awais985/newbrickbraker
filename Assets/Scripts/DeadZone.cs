@@ -1,26 +1,31 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DeadZone : MonoBehaviour
 {
-    // Jab koi Collider2D DeadZone ke trigger area mein enter kare
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(
+        Collider2D other
+    )
     {
-        // Sirf us object ko check karna
-        // jiska tag "Ball" hai
-        if (other.CompareTag("Ball"))
+        // Sirf Ball detect karna
+        if (!other.CompareTag("Ball"))
         {
-            // DeadZone mein enter hone wali Ball se
-            // BallMovement component lena
-            BallMovement ballMovement =
-                other.GetComponent<BallMovement>();
+            return;
+        }
 
-            // Agar BallMovement component mil gaya
-            if (ballMovement != null)
-            {
-                // Ball ki movement rok kar
-                // usay Paddle ke upar wapas reset karna
-                GameManager.instance.LoseLife(ballMovement);
-            }
+        // BallMovement component lena
+        BallMovement ballMovement =
+            other.GetComponent<BallMovement>();
+
+        if (ballMovement != null)
+        {
+            // Ab direct LoseLife nahi.
+
+            // Pehle:
+            // 💥 Explosion
+            // phir delay
+            // phir LoseLife
+            ballMovement.ExplodeBall();
+            GameManager.instance.LoseLife(ballMovement);
         }
     }
 }

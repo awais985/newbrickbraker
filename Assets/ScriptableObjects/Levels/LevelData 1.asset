@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: LevelData 1
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   rows: 1
-  columns: 1
+  columns: 2
   horizontalSpacing: 1.5
   verticalSpacing: 0.8
   brickLayout:
-  - {fileID: 11400000, guid: 519cef90fec6a824384f33732ddc3b2e, type: 2}
+  - {fileID: 11400000, guid: c73f2f556a1c1c74f91aedba43b4d7b1, type: 2}
+  - {fileID: 11400000, guid: c73f2f556a1c1c74f91aedba43b4d7b1, type: 2}

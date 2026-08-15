@@ -7,4 +7,6 @@ public class BrickData : ScriptableObject
     public int hitPoints = 1;
     public int score = 10;
     public bool unbreakable;
+    public Sprite damagedSprite;
+
 }

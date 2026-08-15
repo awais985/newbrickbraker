@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "LevelData", menuName = "Brick Breaker/Level Data")]
+[CreateAssetMenu(fileName = "LevelData", menuName = "Brick Breaker/Level Catalog")]
 public class LevelCatalog : ScriptableObject
 {
-    [SerializeField] private LevelData[] levelDatas;
+    public LevelData[] levels;
 }

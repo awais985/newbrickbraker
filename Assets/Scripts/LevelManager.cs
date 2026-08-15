@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private LevelData[] levels;
+    [SerializeField] private LevelCatalog levelCatalog;
     [SerializeField] private BrickSpawner brickSpawner;
     //public BrickData[] brickLayout;
 
@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
         currentIndex = Mathf.Clamp(
             selectedLevel,
             0,
-            levels.Length - 1
+            levelCatalog.levels.Length - 1
         );
 
 
@@ -36,12 +36,12 @@ public class LevelManager : MonoBehaviour
 
     public int TotalLevels()
     {
-        return levels.Length;
+        return levelCatalog.levels.Length;
     }
 
     public bool CheckNextLevelAvailable()
     {
-        if (currentIndex < levels.Length - 1)
+        if (currentIndex < levelCatalog.levels.Length - 1)
         {
             return true;
         }
@@ -50,7 +50,7 @@ public class LevelManager : MonoBehaviour
 
     public bool LevelCompleted()
     {
-        if(currentIndex < levels.Length - 1)
+        if(currentIndex < levelCatalog.levels.Length - 1)
         {
             currentIndex++;
 
@@ -65,7 +65,7 @@ public class LevelManager : MonoBehaviour
     {
         brickSpawner.ClearLevel();
 
-        currentLevelData = levels[index];
+        currentLevelData = levelCatalog.levels[index];
         
         brickSpawner.BuildLevel(currentLevelData);
     }

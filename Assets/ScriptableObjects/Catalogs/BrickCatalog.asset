@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dbca300cb884145be317aa5cdd3ed3, type: 3}
   m_Name: BrickCatalog
   m_EditorClassIdentifier: Assembly-CSharp::BrickCatalog
-  bricks:
-  - {fileID: 11400000, guid: c73f2f556a1c1c74f91aedba43b4d7b1, type: 2}
+  bricks: []

@@ -1,0 +1,829 @@
+fileFormatVersion: 2
+guid: c279cbd13161b994da837fa07e4cabba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -744497222123329510
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_0
+  - first:
+      213: 4652849672232028318
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_1
+  - first:
+      213: 8770620197996583369
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_2
+  - first:
+      213: -578691232458652900
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_3
+  - first:
+      213: 3466049703669107539
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_4
+  - first:
+      213: 4957484669137731767
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_5
+  - first:
+      213: -4338307157924108159
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_6
+  - first:
+      213: 6628967919764238680
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_7
+  - first:
+      213: -8614432540177166698
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_8
+  - first:
+      213: 2160803686033095595
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_9
+  - first:
+      213: -7439080220533152458
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_10
+  - first:
+      213: 6547195266915495121
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_11
+  - first:
+      213: 7064691465204745400
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_12
+  - first:
+      213: 753825835577174806
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_13
+  - first:
+      213: 8401633626794679350
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_14
+  - first:
+      213: -3556293374504813395
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_15
+  - first:
+      213: 4479574341577123470
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_16
+  - first:
+      213: -2887950826376321016
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_17
+  - first:
+      213: -7724184500723182653
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_18
+  - first:
+      213: -3503291821633389258
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_19
+  - first:
+      213: -8911345755199408378
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_20
+  - first:
+      213: 5703180969952294214
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_21
+  - first:
+      213: -2936693906142582787
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_22
+  - first:
+      213: -1105956324108292118
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_23
+  - first:
+      213: -3861944010933955092
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_24
+  - first:
+      213: 2790551933518286406
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_25
+  - first:
+      213: -5371517246173688914
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_26
+  - first:
+      213: -1108348313067883392
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_27
+  - first:
+      213: 2453242162324905325
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_28
+  - first:
+      213: 5348916990639272803
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_29
+  - first:
+      213: 4914815332631410890
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_30
+  - first:
+      213: 6864652832617664856
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_31
+  - first:
+      213: 2497357062817119820
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_32
+  - first:
+      213: -3370052695583444237
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_33
+  - first:
+      213: -7658260226154218447
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_34
+  - first:
+      213: -8891255739847618672
+    second: ChatGPT Image Aug 15, 2026, 12_16_51 PM_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RedBrick_Crack1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 882
+        width: 246
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18e21398b30ba5f0800000000000000
+      internalID: -744497222123329510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedBrick_Crack12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 773
+        width: 272
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98cea2002e329040800000000000000
+      internalID: 4652849672232028318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedShard_01
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 774
+        width: 361
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 8, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9d371f99087b970800000000000000
+      internalID: 8770620197996583369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedShard_02
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 773
+        width: 282
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c134baed36318f7f0800000000000000
+      internalID: -578691232458652900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedShard_03
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 781
+        width: 111
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b8b0177d1e91030800000000000000
+      internalID: 3466049703669107539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedExplosion
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 770
+        width: 353
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0466b6a068cc440800000000000000
+      internalID: 4957484669137731767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBrick_Crack1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 629
+        width: 246
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188266d00ac3bc3c0800000000000000
+      internalID: -4338307157924108159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBrick_Crack2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 526
+        width: 272
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851f1058333defb50800000000000000
+      internalID: 6628967919764238680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueShard_01
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 521
+        width: 345
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e8c25fe33637880800000000000000
+      internalID: -8614432540177166698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueShard_02
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 524
+        width: 282
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab7b570187bcfd10800000000000000
+      internalID: 2160803686033095595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowExplosion
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 284
+        width: 359
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dced9f186f4cda50800000000000000
+      internalID: 6547195266915495121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreemBrick_Crack2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 29
+        width: 272
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4434f0573da0260800000000000000
+      internalID: 7064691465204745400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreemBrick_Crack1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 133
+        width: 246
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61be6108a90267a00800000000000000
+      internalID: 753825835577174806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenShard_01
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 25
+        width: 345
+        height: 240
+      alignment: 9
+      pivot: {x: 0.42645627, y: 0.49754137}
+      border: {x: 0, y: 0, z: 10, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63cd2121549989470800000000000000
+      internalID: 8401633626794679350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenShard_02
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 31
+        width: 275
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacb097940285aec0800000000000000
+      internalID: -3556293374504813395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenShard_03
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 39
+        width: 103
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86a8ae3125aa2e30800000000000000
+      internalID: 4479574341577123470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenExplosion
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 34
+        width: 350
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8082b014600fbe7d0800000000000000
+      internalID: -2887950826376321016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueShard_03
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 530
+        width: 102
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322326c68c0247140b75593d7227766e
+      internalID: 1228170864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueExplosion
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 529
+        width: 353
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d286854a9f79524691a20c2570cada1
+      internalID: -2101285324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBrick_Crack1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 384
+        width: 246
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f130f470b7786ad47bf834287ea84c20
+      internalID: -1031324780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowBrick_Crack2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 278
+        width: 272
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7059e81146d7dd24785fe872709806f1
+      internalID: -109422813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowShard_01
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 278
+        width: 337
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a14d1b7380b044da8885c95c35de48
+      internalID: 2072519540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowShard_02
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 276
+        width: 275
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f5415628c3ca04c88424e06b4f092d
+      internalID: 997012352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowShard_03
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 283
+        width: 102
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e432c37a809d7934fb7f448823ef4c60
+      internalID: -659636410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c22267532580a44889c51f1c2b64268
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      1: -4338307157924108159
+      BlueBrick_Crack1: -4338307157924108159
+      BlueBrick_Crack2: 6628967919764238680
+      BlueExplosion: -2101285324
+      BlueShard_01: -8614432540177166698
+      BlueShard_02: 2160803686033095595
+      BlueShard_03: 1228170864
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_1: 1250866105
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_18: -7724184500723182653
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_19: -3503291821633389258
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_20: -8911345755199408378
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_21: 5703180969952294214
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_22: -2936693906142582787
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_23: -1105956324108292118
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_24: -3861944010933955092
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_25: 2790551933518286406
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_26: -5371517246173688914
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_27: -1108348313067883392
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_28: 2453242162324905325
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_29: 5348916990639272803
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_30: 4914815332631410890
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_31: 6864652832617664856
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_32: 2497357062817119820
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_33: -3370052695583444237
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_34: -7658260226154218447
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_35: -8891255739847618672
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_4: -351836793
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_5: 753704696
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_8: -1942867166
+      ChatGPT Image Aug 15, 2026, 12_16_51 PM_9: -423796580
+      GreemBrick_Crack1: 753825835577174806
+      GreemBrick_Crack2: 7064691465204745400
+      GreenExplosion: -2887950826376321016
+      GreenShard_01: 8401633626794679350
+      GreenShard_02: -3556293374504813395
+      GreenShard_03: 4479574341577123470
+      RedBrick_Crack1: -744497222123329510
+      RedBrick_Crack12: 4652849672232028318
+      RedExplosion: 4957484669137731767
+      RedShard_01: 8770620197996583369
+      RedShard_02: -578691232458652900
+      RedShard_03: 3466049703669107539
+      YellowBrick_Crack1: -1031324780
+      YellowBrick_Crack2: -109422813
+      YellowExplosion: 6547195266915495121
+      YellowShard_01: 2072519540
+      YellowShard_02: 997012352
+      YellowShard_03: -659636410
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: RedBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
   prefab: {fileID: 1581828840084113728, guid: f620a9ddc58a663479a426a35bdc2f03, type: 3}
-  hitPoints: 1
+  hitPoints: 2
   score: 10
   unbreakable: 0
+  damagedSprite: {fileID: 410784628, guid: 812e40a9a312d8b4b8a01a9086639cc0, type: 3}

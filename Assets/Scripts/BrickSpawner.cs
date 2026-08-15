@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.Android.Gradle.Manifest;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BrickSpawner : MonoBehaviour
@@ -162,18 +163,24 @@ public class BrickSpawner : MonoBehaviour
         // Agar saari bricks destroy ho chuki hain
         if (remainingBricks == 0)
         {
-            if (LevelManager.instance != null)
-            { 
-                bool isNext = LevelManager.instance.CheckNextLevelAvailable();
-                if (isNext)
-                {
-                    LevelManager.instance.UnlockNextLevel();
-                }
-            }
-            StartCoroutine(ShowLevelCompleteAfterDelay());
+            StartCoroutine(NextLevelDelay());
         }
     }
 
+    private IEnumerator NextLevelDelay()
+    {
+        yield return new WaitForSeconds(1f);
+
+        if (LevelManager.instance != null)
+        {
+            bool isNext = LevelManager.instance.CheckNextLevelAvailable();
+            if (isNext)
+            {
+                LevelManager.instance.UnlockNextLevel();
+            }
+        }
+        StartCoroutine(ShowLevelCompleteAfterDelay());
+    }
     private IEnumerator ShowLevelCompleteAfterDelay()
     {
         Time.timeScale = 0;

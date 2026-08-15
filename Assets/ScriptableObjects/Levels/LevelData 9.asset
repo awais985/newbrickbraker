@@ -17,7 +17,7 @@ MonoBehaviour:
   horizontalSpacing: 1.5
   verticalSpacing: 0.8
   brickLayout:
-  - {fileID: 11400000, guid: e4be3668955440c43a954cd291f71fc9, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 519cef90fec6a824384f33732ddc3b2e, type: 2}
   - {fileID: 11400000, guid: fe981348d611cb743a2ac64dd1781ffb, type: 2}
-  - {fileID: 11400000, guid: e4be3668955440c43a954cd291f71fc9, type: 2}
+  - {fileID: 0}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BlueBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
   prefab: {fileID: 1581828840084113728, guid: 525847b7d6dc2dc438ac1d139d8efb3a, type: 3}
-  hitPoints: 1
+  hitPoints: 2
   score: 10
   unbreakable: 0
+  damagedSprite: {fileID: 378197099, guid: 812e40a9a312d8b4b8a01a9086639cc0, type: 3}

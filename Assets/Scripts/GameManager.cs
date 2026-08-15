@@ -7,11 +7,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int lives = 3;
     [SerializeField] private BallMovement ballMovement;
     [SerializeField] private PaddleController paddleController;
+    [SerializeField] private LivesUI livesUI;
     // Puri game mein GameManager ka single global reference
     public static GameManager instance;
 
     private bool isPaused;
-
+    private bool isLosingLife;
     private void Awake()
     {
         // Agar pehle se koi GameManager instance mojood hai
@@ -179,8 +180,32 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void AddLife(BallMovement ballMovement)
+    {
+        lives++;
+
+        if (AudioClipManager.instance != null)
+        {
+            AudioClipManager.instance.PlayLoseLife();
+        }
+
+        Debug.Log(lives);
+
+        if (livesUI != null)
+        {
+            livesUI.UpdateLives(lives);
+        }
+    }
+
     public void LoseLife(BallMovement ballMovement)
     {
+        if (isLosingLife)
+        {
+            return;
+        }
+
+        isLosingLife = true;
+
         lives--;
 
         if (AudioClipManager.instance != null)
@@ -189,7 +214,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        UIManager.instance.UpdateLivesText(lives);
+        livesUI.UpdateLives(lives);
 
         if (lives <= 0)
         {

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: YellowBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
   prefab: {fileID: 1581828840084113728, guid: 5674a8bf8f6ac984c871ffe5bffd7a71, type: 3}
-  hitPoints: 1
+  hitPoints: 2
   score: 10
   unbreakable: 0
+  damagedSprite: {fileID: -1326208708, guid: 812e40a9a312d8b4b8a01a9086639cc0, type: 3}

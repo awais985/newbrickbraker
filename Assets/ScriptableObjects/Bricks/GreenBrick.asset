@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GreenBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
   prefab: {fileID: 1581828840084113728, guid: 08a4809e85701374185625d4cfff4ac2, type: 3}
-  hitPoints: 1
+  hitPoints: 2
   score: 10
   unbreakable: 0
+  damagedSprite: {fileID: 8113157998717922008, guid: 812e40a9a312d8b4b8a01a9086639cc0, type: 3}

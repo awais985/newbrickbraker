@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1240219002378955540
+--- !u!1 &86241020079338891
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5350312858484993650}
-  - component: {fileID: 3963496206119211827}
-  - component: {fileID: 97657504092314844}
-  - component: {fileID: 4034047106081659967}
-  - component: {fileID: 7758431433705699805}
+  - component: {fileID: 1528251321679820230}
+  - component: {fileID: 8539219491128937620}
+  - component: {fileID: 6187126978543458636}
+  - component: {fileID: 3862470903105866585}
+  - component: {fileID: 5454305580790250948}
   m_Layer: 3
   m_Name: Ball
   m_TagString: Ball
@@ -20,29 +20,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5350312858484993650
+--- !u!4 &1528251321679820230
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240219002378955540}
+  m_GameObject: {fileID: 86241020079338891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.07, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalPosition: {x: 0.0809, y: -4.2529, z: 0}
+  m_LocalScale: {x: 0.15417, y: 0.15417, z: 0.5139}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8923395386571443200}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3963496206119211827
+--- !u!212 &8539219491128937620
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240219002378955540}
+  m_GameObject: {fileID: 86241020079338891}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -94,13 +95,13 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &97657504092314844
+--- !u!58 &6187126978543458636
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240219002378955540}
+  m_GameObject: {fileID: 86241020079338891}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -130,14 +131,14 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.49999997
---- !u!50 &4034047106081659967
+--- !u!50 &3862470903105866585
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240219002378955540}
+  m_GameObject: {fileID: 86241020079338891}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -157,13 +158,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7758431433705699805
+--- !u!114 &5454305580790250948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240219002378955540}
+  m_GameObject: {fileID: 86241020079338891}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1501371bec673c943bcd00cf19385f8d, type: 3}
@@ -174,4 +175,38 @@ MonoBehaviour:
   minimumVerticalDirection: 0.25
   maxSpeed: 10
   paddle: {fileID: 0}
+  trailRenderer: {fileID: 0}
+  deathExplosionPrefab: {fileID: 2195382395594577033, guid: 025c6d571e468ed45a94a2d8b99e5a3d, type: 3}
+  deathDelay: 0.35
   gapBetweenPaddleAndBall: 0.4
+--- !u!1 &813524646263503507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8923395386571443200}
+  m_Layer: 3
+  m_Name: Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8923395386571443200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813524646263503507}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.03, y: -0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1528251321679820230}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

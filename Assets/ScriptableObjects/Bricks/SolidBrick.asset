@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5abc284ae8b5c3945887b1e7709eccf5, type: 3}
-  m_Name: DoubleHitBrek
+  m_Name: SolidBrick
   m_EditorClassIdentifier: Assembly-CSharp::BrickData
-  prefab: {fileID: 1581828840084113728, guid: 17c7f42ede9632a4d82390ee55a79fe4, type: 3}
-  hitPoints: 1
-  score: 10
-  unbreakable: 0
+  prefab: {fileID: 1581828840084113728, guid: 96adb6a18156aca4fb35f7745773b065, type: 3}
+  hitPoints: 0
+  score: 0
+  unbreakable: 1
+  damagedSprite: {fileID: 0}

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class BallMovement : MonoBehaviour
 {
@@ -9,24 +10,40 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private float speedIncrease = 0.3f;
 
     // Ball ko bilkul horizontal move karne se rokne ke liye
-    // minimum vertical direction
     [SerializeField] private float minimumVerticalDirection = 0.25f;
 
     // Ball ki maximum allowed speed
-    // Speed is value se zyada nahi hogi
     [SerializeField] private float maxSpeed = 10f;
 
     // Paddle ka Transform reference
     [SerializeField] private Transform paddle;
 
+    [Header("Trail")]
+    [SerializeField] private TrailRenderer trailRenderer;
+
+    [Header("Death Explosion")]
+    [SerializeField] private ParticleSystem deathExplosionPrefab;
+
+    // Explosion ke baad reset hone se pehle delay
+    [SerializeField] private float deathDelay = 0.35f;
+
     // Ball ke Rigidbody2D ka reference
     private Rigidbody2D rb;
+
+    // Ball SpriteRenderer
+    private SpriteRenderer spriteRenderer;
+
+    // Ball Collider
+    private Collider2D ballCollider;
 
     // Ball ki starting launch direction
     private Vector2 startDirection;
 
     // Check karega ball currently move kar rahi hai ya nahi
     private bool canMove;
+
+    // Check karega ball death animation mein hai ya nahi
+    private bool isDying;
 
     // Paddle aur Ball ke darmiyan vertical gap
     [SerializeField] private float gapBetweenPaddleAndBall = 0.4f;
@@ -40,40 +57,58 @@ public class BallMovement : MonoBehaviour
             GameObject paddleObject =
                 GameObject.FindGameObjectWithTag("Paddle");
 
-            // Agar Paddle object mil gaya
-            // to uska Transform reference save karna
             if (paddleObject != null)
             {
                 paddle = paddleObject.transform;
             }
         }
 
-        // Isi Ball GameObject ka Rigidbody2D lena
+        // Trail Renderer automatically lena
+        if (trailRenderer == null)
+        {
+            trailRenderer =
+                GetComponent<TrailRenderer>();
+        }
+
+        // Rigidbody2D lena
         rb = GetComponent<Rigidbody2D>();
+
+        // Sprite Renderer lena
+        spriteRenderer =
+            GetComponentInChildren<SpriteRenderer>();
+
+        // Ball Collider lena
+        ballCollider =
+            GetComponent<Collider2D>();
     }
 
     private void Start()
     {
+        // Starting state mein trail band
+        SetTrailActive(false);
+
         // Ball ki starting direction up-right banana
-        //
-        // X = 1 matlab right
-        // Y = 1 matlab up
-        //
-        // normalized vector ki length 1 karta hai
-        // lekin direction same rakhta hai
         startDirection =
             new Vector2(1f, 1f).normalized;
     }
 
     private void Update()
     {
+        // Agar ball death animation mein hai
+        // to paddle follow / launch mat karo
+        if (isDying)
+        {
+            return;
+        }
+
         // Agar ball abhi launch nahi hui
         if (!canMove)
         {
             // Ball ko Paddle ke upar rakhna
             transform.position = new Vector2(
                 paddle.position.x,
-                paddle.position.y + gapBetweenPaddleAndBall
+                paddle.position.y +
+                gapBetweenPaddleAndBall
             );
 
             // Space key press hone par ball launch karna
@@ -87,35 +122,49 @@ public class BallMovement : MonoBehaviour
     // Ball ko start direction aur current speed ke saath launch karna
     public void LaunchBall()
     {
-        // Ball ko moving state mein lana
+        // Agar already move kar rahi hai ya dying hai
+        // to dobara launch nahi karna
+        if (canMove || isDying)
+        {
+            return;
+        }
+
         canMove = true;
+
+        // Purani trail clear karke
+        // launch ke waqt trail start karna
+        SetTrailActive(true);
 
         // Direction × Speed = Velocity
         rb.linearVelocity =
             startDirection * speed;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(
+        Collision2D collision
+    )
     {
+        // Death ke waqt collision logic nahi chalana
+        if (isDying)
+        {
+            return;
+        }
+
         // Agar Ball Paddle se collide kare
         if (collision.collider.CompareTag("Paddle"))
         {
             if (AudioClipManager.instance != null)
             {
-                AudioClipManager.instance.PlayPaddleHit();
+                AudioClipManager.instance
+                    .PlayPaddleHit();
             }
 
-            // Paddle ki total width ko 2 se divide karke
-            // paddle ki half width lena
+            // Paddle ki half width
             float halfWidth =
                 collision.collider.bounds.size.x / 2f;
 
-            // Check karna ball paddle ke center se
-            // kitni left ya right side par lagi
-            //
-            // Left edge   ≈ -1
-            // Center      ≈ 0
-            // Right edge  ≈ 1
+            // Ball paddle ke center se kitni
+            // left/right lagi
             float hitPosition =
                 (
                     transform.position.x -
@@ -123,166 +172,262 @@ public class BallMovement : MonoBehaviour
                 )
                 / halfWidth;
 
-            // Hit position ko -1 aur 1 ke darmiyan rakhna
-            // taake unexpected value na aaye
+            // -1 aur 1 ke darmiyan rakhna
             hitPosition = Mathf.Clamp(
                 hitPosition,
                 -1f,
                 1f
             );
 
-            // Agar hit paddle ke bilkul center ke qareeb ho
-            // to safe left ya right direction dena
+            // Center ke qareeb hit fix karna
             hitPosition =
                 GetSafeHitPosition(hitPosition);
 
-            // Hit position se nayi direction banana
-            //
-            // Negative X = up-left
-            // Positive X = up-right
-            // Y = 1      = upar
+            // Nayi upward direction
             Vector2 newDirection =
-                new Vector2(hitPosition, 1f).normalized;
+                new Vector2(
+                    hitPosition,
+                    1f
+                ).normalized;
 
-            // Har paddle collision par speed increase karna
-            //speed += speedIncrease;
+            /*
+            // Agar baad mein speed increase enable karni ho:
 
-            // Speed ko maxSpeed se zyada jane se rokna
-            //speed = Mathf.Min(
-            //    speed,
-            //    maxSpeed
-            //);
+            speed += speedIncrease;
 
-            // Ball ko nayi direction aur updated speed dena
+            speed = Mathf.Min(
+                speed,
+                maxSpeed
+            );
+            */
+
             rb.linearVelocity =
                 newDirection * speed;
         }
 
+        // Boundaries hit sound
         if (collision.collider.CompareTag("Boundaries"))
         {
             if (AudioClipManager.instance != null)
             {
-                AudioClipManager.instance.PlayBoundaryHit();
+                AudioClipManager.instance
+                    .PlayBoundaryHit();
             }
         }
 
-        // Har collision ke baad check karna
-        // ke Ball almost horizontal to nahi chal rahi
+        // Horizontal movement fix
         FixHorizontalMovement();
     }
 
-    // Ball ko bilkul horizontal left-right loop mein
-    // phasne se bachane wala method
     private void FixHorizontalMovement()
     {
-        // Ball ki current velocity lena
         Vector2 currentVelocity =
             rb.linearVelocity;
 
-        // Current actual speed save karna
-        //
-        // magnitude velocity vector ki total length hoti hai
         float currentSpeed =
             currentVelocity.magnitude;
 
-        // Current velocity se sirf direction lena
-        //
-        // normalized ke baad direction ki length 1 ho jayegi
+        // Agar ball move hi nahi kar rahi
+        // to kuch fix nahi karna
+        if (currentSpeed <= 0f)
+        {
+            return;
+        }
+
         Vector2 direction =
             currentVelocity.normalized;
 
-        // Agar vertical Y direction bohat kam hai
-        // to Ball almost horizontal move kar rahi hai
         if (Mathf.Abs(direction.y) <
             minimumVerticalDirection)
         {
-            // Agar Ball upar ja rahi thi
-            // to positive minimum Y dena
-            //
-            // Agar Ball neeche ja rahi thi
-            // to negative minimum Y dena
             float newY =
                 currentVelocity.y >= 0f
                     ? minimumVerticalDirection
                     : -minimumVerticalDirection;
 
-            // Direction ki Y value fix karna
             direction.y = newY;
 
-            // Y change karne ke baad vector ki length
-            // dobara 1 karna
-            direction = direction.normalized;
+            direction =
+                direction.normalized;
 
-            // Corrected direction ke saath
-            // same actual speed preserve karna
             rb.linearVelocity =
                 direction * currentSpeed;
         }
     }
 
-    // Paddle ke center ke qareeb hit ko
-    // safe left ya right direction dena
+    private void SetTrailActive(
+        bool active
+    )
+    {
+        if (trailRenderer == null)
+        {
+            return;
+        }
+
+        // Pehle emitting state change
+        trailRenderer.emitting = active;
+
+        // Purani positions remove
+        trailRenderer.Clear();
+    }
+
     private float GetSafeHitPosition(
         float hitPosition
     )
     {
-        // Mathf.Abs negative sign ko ignore karta hai
-        //
-        // Abs(-0.1) = 0.1
-        // Abs(0.1)  = 0.1
-        //
-        // Dono values center ke qareeb hain
         if (Mathf.Abs(hitPosition) < 0.25f)
         {
-            // Agar Ball center se thori left lagi
-            // to minimum left direction dena
             if (hitPosition < 0f)
             {
                 return -0.25f;
             }
-
-            // Agar Ball center se thori right lagi
-            // to minimum right direction dena
             else if (hitPosition > 0f)
             {
                 return 0.25f;
             }
-
-            // Agar Ball bilkul exact center par lagi
             else
             {
-                // Agar Ball collision se pehle
-                // left direction mein ja rahi thi
                 if (rb.linearVelocity.x < 0f)
                 {
                     return -0.25f;
                 }
 
-                // Warna Ball ko minimum right direction dena
                 return 0.25f;
             }
         }
 
-        // Agar hit center se door hai
-        // to original hit position return karna
         return hitPosition;
+    }
+
+    // DeadZone is method ko call karega
+    public void ExplodeBall()
+    {
+        // Ek hi death par multiple explosion
+        // hone se rokna
+        if (isDying)
+        {
+            return;
+        }
+
+        StartCoroutine(
+            DeathRoutine()
+        );
+    }
+
+    private IEnumerator DeathRoutine()
+    {
+        // Ball ko death state mein lana
+        isDying = true;
+
+        // Normal movement band
+        canMove = false;
+
+        // Ball stop
+        rb.linearVelocity =
+            Vector2.zero;
+
+        rb.angularVelocity = 0f;
+
+        // Trail turant band + clear
+        SetTrailActive(false);
+
+        // Explosion create karna
+        if (deathExplosionPrefab != null)
+        {
+            ParticleSystem explosion =
+                Instantiate(
+                    deathExplosionPrefab,
+                    transform.position,
+                    Quaternion.identity
+                );
+
+            explosion.Play();
+
+            // Explosion object ko baad mein remove
+            Destroy(
+                explosion.gameObject,
+                2f
+            );
+        }
+
+        // Ball miss hone par halka camera shake
+        if (CameraShake.instance != null)
+        {
+            CameraShake.instance.Shake();
+        }
+
+        // Ball ko visually hide
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = false;
+        }
+
+        // DeadZone dobara trigger na kare
+        if (ballCollider != null)
+        {
+            ballCollider.enabled = false;
+        }
+
+        // Explosion ko visible hone ka time
+        yield return new WaitForSeconds(
+            deathDelay
+        );
+
+        // Ab life lose karna
+        if (GameManager.instance != null)
+        {
+            GameManager.instance
+                .LoseLife(this);
+        }
+        else
+        {
+            // Safety fallback
+            ResetBall();
+        }
     }
 
     // DeadZone mein jane ke baad
     // Ball ko Paddle ke paas reset karna
     public void ResetBall()
     {
-        // Ball ki current movement rokna
-        rb.linearVelocity = Vector2.zero;
+        // Movement stop
+        rb.linearVelocity =
+            Vector2.zero;
 
-        // Ball ko Paddle ke upar wapas lana
+        rb.angularVelocity = 0f;
+
+        // Trail reset se PEHLE band
+        SetTrailActive(false);
+
+        // Ball ko paddle ke upar lana
         transform.position = new Vector2(
             paddle.position.x,
-            paddle.position.y + gapBetweenPaddleAndBall
+            paddle.position.y +
+            gapBetweenPaddleAndBall
         );
 
-        // Ball ko dobara launch hone tak
-        // Paddle ke saath rakhna
+        // Ball Sprite wapas show
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+        }
+
+        // Collider wapas enable
+        if (ballCollider != null)
+        {
+            ballCollider.enabled = true;
+        }
+
+        // Death complete
+        isDying = false;
+
+        // Ball paddle ke saath wait karegi
         canMove = false;
+
+        // Extra safety clear
+        if (trailRenderer != null)
+        {
+            trailRenderer.Clear();
+        }
     }
 }
