@@ -8,6 +8,7 @@ TagManager:
   - Paddle
   - Ball
   - Boundaries
+  - PowerUp
   layers:
   - Default
   - TransparentFX

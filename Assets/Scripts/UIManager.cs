@@ -3,42 +3,69 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Puri game mein UIManager ka single global reference
+    // =========================================================
+    // SINGLETON
+    // =========================================================
+
+    // Puri game mein UIManager ka global reference
     public static UIManager instance;
 
-    // Canvas par current score show karne wala TextMeshPro text
+
+    // =========================================================
+    // HUD REFERENCES
+    // =========================================================
+
+    [Header("HUD")]
+
+    // Current score show karne wala TMP text
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    // Canvas par current Live show karne wala TextMeshPro text
+    // Agar text-based lives bhi use karni hain
     [SerializeField] private TextMeshProUGUI liveText;
 
 
-    // Current level complete hone par show hone wala panel
+    // =========================================================
+    // PANEL REFERENCES
+    // =========================================================
+
+    [Header("Panels")]
+
+    // Current level complete hone par show hoga
     [SerializeField] private GameObject levelCompletePanel;
 
-    // Saare levels complete hone par show hone wala panel
+    // Saare levels complete hone par show hoga
     [SerializeField] private GameObject gameCompletePanel;
 
-    // Game Over hone par show hone wala panel
+    // Lives 0 hone par show hoga
     [SerializeField] private GameObject gameOverPanel;
 
-    // Game Pause hone par show hone wala panel
+    // Pause menu
     [SerializeField] private GameObject pausePanel;
 
+    // Settings menu
+    [SerializeField] private GameObject settingsPanel;
+
+
+    // =========================================================
+    // BUTTON REFERENCES
+    // =========================================================
+
+    [Header("Buttons")]
+
+    // Gameplay ka Pause button
     [SerializeField] private GameObject pauseButton;
 
-    [SerializeField] private GameObject settingsPanel;
+
+    // =========================================================
+    // INITIALIZATION
+    // =========================================================
 
     private void Awake()
     {
-        // Agar pehle se koi UIManager instance mojood hai
-        // aur woh current object nahi hai
+        // Duplicate UIManager ko destroy karna
         if (instance != null && instance != this)
         {
-            // Duplicate UIManager destroy karna
             Destroy(gameObject);
-
-            // Neeche ka code run nahi karna
             return;
         }
 
@@ -46,155 +73,223 @@ public class UIManager : MonoBehaviour
         instance = this;
     }
 
+
     private void Start()
     {
-        if (levelCompletePanel != null)
-        {
-            // Game start par Level Complete panel hidden rakhna
-//            levelCompletePanel.SetActive(false);
-        }
+        // Game start par temporary panels hide rakhna
+        SetPanelState(levelCompletePanel, false);
+        SetPanelState(gameCompletePanel, false);
+        SetPanelState(gameOverPanel, false);
+        SetPanelState(pausePanel, false);
+        SetPanelState(settingsPanel, false);
 
-        if (gameCompletePanel != null)
-        {
-            // Game start par Game Complete panel hidden rakhna
-            gameCompletePanel.SetActive(false);
-        }
-        // Game start par score 0 show karna
+        // Pause button normal gameplay mein visible
+        SetPanelState(pauseButton, true);
+
+        // Starting score
         UpdateScoreText(0);
     }
 
-    // ScoreManager se updated score receive karke
-    // Canvas par show karna
+
+    // =========================================================
+    // SCORE UI
+    // =========================================================
+
     public void UpdateScoreText(int score)
     {
-        if(scoreText != null)
+        if (scoreText != null)
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text =
+                "Score: " + score;
         }
     }
 
-    // Jab current level ki saari bricks destroy ho jayein
-    // to yeh method call hoga
-    public void ShowLevelComplete()
-    {
-        if(AudioClipManager.instance != null)
-        {
-            AudioClipManager.instance.PlayLevelComplete();
 
-        }
-        if (levelCompletePanel != null)
-        {
-            // Level Complete panel visible karna
-            levelCompletePanel.SetActive(true);
-
-            // Game ki physics aur time-based movement pause karna
-            Time.timeScale = 0f;
-        }
-    }
-
-    public void HideLevelComplete()
-    {
-        if(AudioClipManager.instance != null)
-        {
-            AudioClipManager.instance.PlayLevelComplete();
-        }
-        if (levelCompletePanel != null)
-        {
-            // Level Complete panel visible karna
-            levelCompletePanel.SetActive(false);
-
-            // Game ki physics aur time-based movement pause karna
-            Time.timeScale = 1f;
-        }
-    }
-
-    // Jab last level bhi complete ho jaye
-    // aur koi next scene available na ho
-    // to yeh method call hoga
-    public void ShowGameComplete()
-    {
-        if(AudioClipManager.instance != null)
-        {
-            AudioClipManager.instance.PlayLevelComplete();
-        }
-        if(levelCompletePanel != null && gameCompletePanel!= null)
-        {
-
-            // Pehle Level Complete panel hide karna
-            // taake dono panels ek saath show na hon
-            levelCompletePanel.SetActive(false);
-
-            // Game Complete panel visible karna
-            gameCompletePanel.SetActive(true);
-
-            // Game ko paused rakhna
-            Time.timeScale = 0f;
-
-        }
-    }
+    // =========================================================
+    // LIVES UI
+    // =========================================================
 
     public void UpdateLivesText(int lives)
     {
-        if(AudioClipManager.instance != null)
+        // Ye method sirf UI update karega.
+        // Sound GameManager handle karega.
+
+        if (liveText != null)
         {
-            AudioClipManager.instance.PlayLoseLife();
-        }
-        if(liveText != null)
-        {
-            liveText.text = "Lives: " + lives.ToString();
+            liveText.text =
+                "Lives: " + lives;
         }
     }
+
+
+    // =========================================================
+    // LEVEL COMPLETE
+    // =========================================================
+
+    public void ShowLevelComplete()
+    {
+        // Level complete sound sirf panel show
+        // hone ke waqt play karna
+        if (AudioClipManager.instance != null)
+        {
+            AudioClipManager.instance
+                .PlayLevelComplete();
+        }
+
+        SetPanelState(
+            levelCompletePanel,
+            true
+        );
+
+        // Gameplay freeze
+        Time.timeScale = 0f;
+    }
+
+
+    public void HideLevelComplete()
+    {
+        // Panel hide karna
+        SetPanelState(
+            levelCompletePanel,
+            false
+        );
+
+        // Gameplay resume
+        Time.timeScale = 1f;
+    }
+
+
+    // =========================================================
+    // GAME COMPLETE
+    // =========================================================
+
+    public void ShowGameComplete()
+    {
+        // Level Complete panel ko hide rakhna
+        SetPanelState(
+            levelCompletePanel,
+            false
+        );
+
+        // Game Complete panel show
+        SetPanelState(
+            gameCompletePanel,
+            true
+        );
+
+        // Completion sound
+        if (AudioClipManager.instance != null)
+        {
+            AudioClipManager.instance
+                .PlayLevelComplete();
+        }
+
+        // Game freeze
+        Time.timeScale = 0f;
+    }
+
+
+    // =========================================================
+    // GAME OVER
+    // =========================================================
 
     public void ShowGameOver()
     {
+        SetPanelState(
+            gameOverPanel,
+            true
+        );
 
-
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(true);
-            Time.timeScale = 0f;
-        }
+        Time.timeScale = 0f;
     }
+
+
+    // =========================================================
+    // PAUSE PANEL
+    // =========================================================
 
     public void ShowPausePanel()
     {
-        if(AudioClipManager.instance != null)
+        // Panel opening sound
+        if (AudioClipManager.instance != null)
         {
-            AudioClipManager.instance.PlayPanelSound();
+            AudioClipManager.instance
+                .PlayPanelSound();
         }
-        if(pausePanel != null && pauseButton != null)  
-        {
-            pausePanel.SetActive(true);
-            pauseButton.SetActive(false);
-        }
+
+        // Pause menu show
+        SetPanelState(
+            pausePanel,
+            true
+        );
+
+        // Pause button hide
+        SetPanelState(
+            pauseButton,
+            false
+        );
     }
+
 
     public void HidePausePanel()
     {
-        if (pausePanel != null && pauseButton != null)
-        {
-            pausePanel.SetActive(false);
-            pauseButton.SetActive(true);
-        }
+        // Pause menu hide
+        SetPanelState(
+            pausePanel,
+            false
+        );
+
+        // Pause button wapas show
+        SetPanelState(
+            pauseButton,
+            true
+        );
     }
 
-    public void ShowSettingPanel() {
-        if(AudioClipManager.instance != null)
-        {
-            AudioClipManager.instance.PlayPanelSound();
-        }
-        if(settingsPanel != null)
-        {
 
-            settingsPanel.SetActive(true);
+    // =========================================================
+    // SETTINGS PANEL
+    // =========================================================
+
+    public void ShowSettingPanel()
+    {
+        // Panel opening sound
+        if (AudioClipManager.instance != null)
+        {
+            AudioClipManager.instance
+                .PlayPanelSound();
         }
+
+        SetPanelState(
+            settingsPanel,
+            true
+        );
     }
+
 
     public void HideSettingPanel()
     {
-        if (settingsPanel != null)
+        SetPanelState(
+            settingsPanel,
+            false
+        );
+    }
+
+
+    // =========================================================
+    // HELPER METHOD
+    // =========================================================
+
+    // Repeated null check + SetActive code
+    // ek jagah handle karna
+    private void SetPanelState(
+        GameObject panel,
+        bool state
+    )
+    {
+        if (panel != null)
         {
-            settingsPanel.SetActive(false);
+            panel.SetActive(state);
         }
     }
 }

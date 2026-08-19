@@ -1,8 +1,9 @@
 public enum PowerUpType
 {
-    DeadZone,
-    GrowPaddle,
+    BottomShield,
+    ExpandPaddle,
     ExtraLife,
+    SlowBall,
     MultiBall,
-    ShrinkPaddle,
+    ShrinkPaddle
 }

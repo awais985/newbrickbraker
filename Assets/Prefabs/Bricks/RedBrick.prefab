@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1191110771525534518}
   - component: {fileID: 7847049868682898730}
   - component: {fileID: 8057813491336214844}
+  - component: {fileID: 7034499797351501045}
   m_Layer: 0
   m_Name: RedBrick
   m_TagString: Untagged
@@ -105,20 +106,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d821db222b6cb0c40ac451f4943c3131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Brick
-  fadeSpeed: 3
   punchScale: 0.94
   punchDuration: 0.08
   shardPrefabs:
-  - {fileID: 504614965218687141, guid: a2c9aca5490de354ca705dfdb497af52, type: 3}
-  - {fileID: 504614965218687141, guid: 742378a1dc89e104fa18b3a4376169cb, type: 3}
-  - {fileID: 504614965218687141, guid: 6108f738149e3a4488663c12867d45ca, type: 3}
-  - {fileID: 504614965218687141, guid: 46b35332640ac524aa93a7eb41adb080, type: 3}
-  - {fileID: 504614965218687141, guid: ed64d6fdea6e98946b1ceee09c3fd01d, type: 3}
-  - {fileID: 504614965218687141, guid: 2c276e16822587147af003ebd91a55ef, type: 3}
+  - {fileID: 7243207180662910233, guid: c78c29141d4faeb4c803bca55e245d7b, type: 3}
+  - {fileID: 7650607769910646603, guid: 4e3aedc9ed35e3041ad187836bb8448d, type: 3}
+  - {fileID: 7650607769910646603, guid: 4c5d2fe6e9b48164183d32b73f78ce3b, type: 3}
+  - {fileID: 7650607769910646603, guid: 12f4ca80e73a10c4ba8eb0fc8584b215, type: 3}
+  - {fileID: 7650607769910646603, guid: a1641789bb705004bb067b3728ba9dd6, type: 3}
+  - {fileID: 7650607769910646603, guid: cb524c4cc734f6945b8c899ee63ebac6, type: 3}
   shardCount: 5
   shardForce: 3
   shardTorque: 180
   shardLifetime: 1
+  shardScale: 0.15
+  powerUpPrefabs: []
+  powerUpDropChance: 0.2
 --- !u!61 &8057813491336214844
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,3 +168,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.84, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &7034499797351501045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581828840084113728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1690acd42af693342abe5b2aca7f3cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BrickClickTest

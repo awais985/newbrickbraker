@@ -260,7 +260,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrowPaddlePowerUp
+      name: ExpendPaddlePowerUp
       rect:
         serializedVersion: 2
         x: 803
@@ -326,7 +326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChatGPT Image Aug 14, 2026, 04_48_48 PM_11
+      name: SlowBallPowerUp
       rect:
         serializedVersion: 2
         x: 397
@@ -473,7 +473,6 @@ TextureImporter:
     nameFileIdTable:
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_0: -1862551745195183442
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_10: -1626915460
-      ChatGPT Image Aug 14, 2026, 04_48_48 PM_11: -1211808899
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_12: 1908656312
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_14: -760648611
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_15: 633438773
@@ -484,10 +483,11 @@ TextureImporter:
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_7: 7117313212804113929
       ChatGPT Image Aug 14, 2026, 04_48_48 PM_8: 940676433386207149
       DeadZonePowerUp: 113941800
+      ExpendPaddlePowerUp: 3835018698976390444
       ExtraLifePowerUp: 8970872889585305865
-      GrowPaddlePowerUp: 3835018698976390444
       MultiBallPowerUp: -5554247131449710731
       ShrinkPaddlePowerUp: 111947526
+      SlowBallPowerUp: -1211808899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

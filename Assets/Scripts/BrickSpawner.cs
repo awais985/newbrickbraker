@@ -1,195 +1,424 @@
-using System.Collections;
-using Unity.Android.Gradle.Manifest;
-using Unity.VisualScripting;
+﻿using System.Collections;
 using UnityEngine;
 
 public class BrickSpawner : MonoBehaviour
 {
-    //// Inspector se assign hone wala Brick Prefab
-    //[SerializeField] private GameObject brickPrefab;
+    // =========================================================
+    // RUNTIME DATA
+    // =========================================================
 
-    //// Grid mein total kitni rows hongi
-    //[SerializeField] private int rows = 1;
-
-    //// Har row mein total kitni bricks hongi
-    //[SerializeField] private int columns = 3;
-
-    //// Har brick ke center ke darmiyan horizontal distance
-    //[SerializeField] private float horizontalSpacing = 1.5f;
-
-    //// Har row ke darmiyan vertical distance
-    //[SerializeField] private float verticalSpacing = 0.8f;
-
-    // Current level mein kitni bricks abhi baqi hain
+    // Current level mein kitni breakable bricks abhi baqi hain
+    //
+    // Unbreakable bricks is count mein include nahi hongi
     private int remainingBricks;
+
+    // Level complete coroutine duplicate start hone se rokne ke liye
+    private bool levelCompleteStarted;
+
+
+    // =========================================================
+    // CLEAR CURRENT LEVEL
+    // =========================================================
 
     public void ClearLevel()
     {
+        // Current BrickSpawner ke saare child bricks
+        // reverse order mein destroy karna
+        //
+        // Reverse loop safer hota hai jab children remove ho rahe hon
         for (int i = transform.childCount - 1; i >= 0; i--)
         {
-            Destroy(transform.GetChild(i).gameObject);
+            Destroy(
+                transform.GetChild(i).gameObject
+            );
         }
+
+        // New level ke liye counters reset
+        remainingBricks = 0;
+        levelCompleteStarted = false;
     }
+
+
+    // =========================================================
+    // BUILD LEVEL
+    // =========================================================
 
     public void BuildLevel(LevelData currentLevelData)
     {
-        // Agar Brick Prefab Inspector mein assign nahi hai
-        // to spawning nahi karni
-        //if (brickPrefab == null)
-        //{
-        //    Debug.LogError("Brick Prefab assign nahi hai.");
-        //    return;
-        //}
+        // Har new level build par count reset karna
+        remainingBricks = 0;
 
-        // Total bricks ka count calculate karke save karna
-        //
-        // Example:
-        // 3 rows � 5 columns = 15 bricks
-        //remainingBricks = currentLevelData.rows * currentLevelData.columns;
-
-        // First brick ke center se last brick ke center tak
-        // total horizontal distance calculate karna
-        //
-        // columns - 1 isliye:
-        // 5 bricks ke darmiyan sirf 4 gaps hote hain
-        float totalWidth =
-            (currentLevelData.columns - 1) * currentLevelData.horizontalSpacing;
-
-        // Grid ko BrickSpawner ke center mein lane ke liye
-        // total width ka aadha left side shift karna
-        float startX =
-            -totalWidth / 2f;
-
-        int requiredSize = currentLevelData.rows * currentLevelData.columns;
+        // Level complete state reset karna
+        levelCompleteStarted = false;
 
 
-        if (currentLevelData.brickLayout.Length != requiredSize)
+        // -----------------------------------------------------
+        // SAFETY CHECKS
+        // -----------------------------------------------------
+
+        // Agar LevelData hi missing hai
+        if (currentLevelData == null)
         {
             Debug.LogError(
-                "Brick Layout size must be " + requiredSize +
-                ". Current size: " + currentLevelData.brickLayout.Length
+                "BrickSpawner: LevelData assign nahi hai."
             );
 
             return;
         }
 
-        // Har row ko create karna
-        for (int row = 0; row < currentLevelData.rows; row++)
+
+        // Agar brick layout array missing hai
+        if (currentLevelData.brickLayout == null)
         {
-            // Current row ke andar har column ki brick create karna
-            for (int column = 0; column < currentLevelData.columns; column++)
+            Debug.LogError(
+                "BrickSpawner: Brick Layout missing hai."
+            );
+
+            return;
+        }
+
+
+        // Rows × Columns se required array size calculate karna
+        int requiredSize =
+            currentLevelData.rows *
+            currentLevelData.columns;
+
+
+        // Check karna ke Brick Layout ka size
+        // grid ke required size ke equal hai
+        if (currentLevelData.brickLayout.Length != requiredSize)
+        {
+            Debug.LogError(
+                "Brick Layout size must be " +
+                requiredSize +
+                ". Current size: " +
+                currentLevelData.brickLayout.Length
+            );
+
+            return;
+        }
+
+
+        // -----------------------------------------------------
+        // GRID HORIZONTAL POSITION
+        // -----------------------------------------------------
+
+        // First brick ke center se last brick ke center tak
+        // total horizontal distance
+        //
+        // Example:
+        // 5 columns = 4 gaps
+        float totalWidth =
+            (currentLevelData.columns - 1) *
+            currentLevelData.horizontalSpacing;
+
+
+        // Grid ko BrickSpawner ke center mein align karna
+        //
+        // Example:
+        // total width = 8
+        // startX = -4
+        float startX =
+            -totalWidth / 2f;
+
+
+        // =====================================================
+        // CREATE ALL BRICKS
+        // =====================================================
+
+        for (int row = 0;
+             row < currentLevelData.rows;
+             row++)
+        {
+            for (int column = 0;
+                 column < currentLevelData.columns;
+                 column++)
             {
+                // -------------------------------------------------
+                // ARRAY INDEX
+                // -------------------------------------------------
 
-                int brickIndex = row * currentLevelData.columns + column;
-
-                //Debug.Log(brickIndex);
-
-                // Current brick ki horizontal X position calculate karna
+                // 2D row/column ko 1D array index mein convert karna
                 //
-                // startX = left side ki starting position
-                // column * spacing = har next brick ko right move karna
-                float xPosition =
-                    startX + column * currentLevelData.horizontalSpacing;
-
-                // Current row ki vertical Y position calculate karna
+                // Example:
+                // columns = 5
                 //
-                // Row 0 = 0
-                // Row 1 = verticalSpacing
-                // Row 2 = verticalSpacing � 2
-                float yPosition =
-                    row * currentLevelData.verticalSpacing;
+                // row 0, column 0 → index 0
+                // row 0, column 1 → index 1
+                // row 1, column 0 → index 5
+                int brickIndex =
+                    row *
+                    currentLevelData.columns +
+                    column;
 
-                //// Calculated X aur Y se brick ki local position banana
-                Vector2 brickPosition =
-                    new Vector2(xPosition, yPosition);
 
-                // Brick Prefab ki nayi copy create karna
-                //
-                // transform dene ka matlab:
-                // current BrickSpawner ko brick ka parent banana
+                // -------------------------------------------------
+                // BRICK DATA
+                // -------------------------------------------------
 
-                BrickData brickData = currentLevelData.brickLayout[brickIndex];
+                BrickData brickData =
+                    currentLevelData.brickLayout[
+                        brickIndex
+                    ];
 
-                if(brickData == null)
+
+                // Null ka matlab:
+                // is grid position par koi brick nahi hogi
+                if (brickData == null)
                 {
                     continue;
                 }
 
+
+                // Agar prefab missing hai
+                if (brickData.prefab == null)
+                {
+                    Debug.LogError(
+                        "BrickSpawner: BrickData prefab missing at index " +
+                        brickIndex
+                    );
+
+                    continue;
+                }
+
+
+                // -------------------------------------------------
+                // BRICK POSITION
+                // -------------------------------------------------
+
+                // Horizontal position
+                float xPosition =
+                    startX +
+                    column *
+                    currentLevelData.horizontalSpacing;
+
+
+                // Vertical position
+                float yPosition =
+                    row *
+                    currentLevelData.verticalSpacing;
+
+
+                // Final local position
+                Vector2 brickPosition =
+                    new Vector2(
+                        xPosition,
+                        yPosition
+                    );
+
+
+                // -------------------------------------------------
+                // REMAINING BRICK COUNT
+                // -------------------------------------------------
+
+                // Sirf breakable bricks count karni hain
+                //
+                // Unbreakable brick destroy nahi hoti,
+                // isliye level completion count mein include nahi hogi
                 if (!brickData.unbreakable)
                 {
                     remainingBricks++;
                 }
 
-                GameObject newBrick = Instantiate(brickData.prefab, transform);
 
-                //// New Brick ko BrickSpawner ke relative position dena
-                newBrick.transform.localPosition = brickPosition;
+                // -------------------------------------------------
+                // SPAWN BRICK
+                // -------------------------------------------------
 
-                //// Spawn hui Brick se Brick component lena
-                Brick brick = newBrick.GetComponent<Brick>();
+                // Brick prefab instantiate karna
+                //
+                // transform dene ka matlab:
+                // BrickSpawner iska parent hoga
+                GameObject newBrick =
+                    Instantiate(
+                        brickData.prefab,
+                        transform
+                    );
 
-                //// Agar Brick component prefab par mojood hai
+
+                // BrickSpawner ke relative
+                // calculated position assign karna
+                newBrick.transform.localPosition =
+                    brickPosition;
+
+
+                // -------------------------------------------------
+                // BRICK SCRIPT SETUP
+                // -------------------------------------------------
+
+                Brick brick =
+                    newBrick.GetComponent<Brick>();
+
+
                 if (brick != null)
                 {
-                    // Brick ko current BrickSpawner ka reference dena
-                    //
-                    // this = current BrickSpawner
+                    // Current BrickSpawner ka reference dena
                     brick.SetSpawner(this);
 
+                    // Is brick ka BrickData dena
                     brick.SetData(brickData);
-
                 }
                 else
                 {
                     Debug.LogError(
-                        "Brick Prefab par Brick script nahi lagi."
+                        "BrickSpawner: Spawned prefab par Brick script nahi lagi."
                     );
                 }
             }
         }
-    }
 
-    // Jab koi Brick destroy hone wali ho
-    // to Brick script yeh method call karegi
-    public void BrickDestroyed()
-    {
-        if (AudioClipManager.instance != null)
-        {
-            AudioClipManager.instance.PlayBrickBreak();
-        }
-        // Remaining bricks ke count mein se 1 kam karna
-        remainingBricks--;
 
-        // Agar saari bricks destroy ho chuki hain
+        // Debugging ke liye useful
+        //Debug.Log(
+        //    "Breakable Bricks: " +
+        //    remainingBricks
+        //);
+
+
+        // Agar level mein ek bhi breakable brick nahi hai
+        // to level immediately complete treat karna
         if (remainingBricks == 0)
         {
-            StartCoroutine(NextLevelDelay());
+            StartLevelCompleteSequence();
         }
     }
+
+
+    // =========================================================
+    // BRICK DESTROYED
+    // =========================================================
+
+    // Jab koi breakable Brick destroy hoti hai
+    // Brick.cs is method ko call karegi
+    public void BrickDestroyed()
+    {
+        // Agar count already 0 hai
+        // to duplicate calls ignore karna
+        if (remainingBricks <= 0)
+        {
+            return;
+        }
+
+
+        // Ek brick kam
+        remainingBricks--;
+
+
+        // Brick break sound
+        if (AudioClipManager.instance != null)
+        {
+            AudioClipManager.instance
+                .PlayBrickBreak();
+        }
+
+
+        //Debug.Log(
+        //    "Remaining Bricks: " +
+        //    remainingBricks
+        //);
+
+
+        // Agar saari breakable bricks destroy ho gayi
+        if (remainingBricks == 0)
+        {
+            StartLevelCompleteSequence();
+        }
+    }
+
+
+    // =========================================================
+    // START LEVEL COMPLETE SEQUENCE
+    // =========================================================
+
+    private void StartLevelCompleteSequence()
+    {
+        // Same sequence multiple baar start na ho
+        if (levelCompleteStarted)
+        {
+            return;
+        }
+
+        levelCompleteStarted = true;
+
+        StartCoroutine(
+            NextLevelDelay()
+        );
+    }
+
+
+    // =========================================================
+    // LEVEL COMPLETE DELAY
+    // =========================================================
 
     private IEnumerator NextLevelDelay()
     {
+        // Last brick break hone ke baad
+        // short delay
         yield return new WaitForSeconds(1f);
+
+
+        // -----------------------------------------------------
+        // UNLOCK NEXT LEVEL
+        // -----------------------------------------------------
 
         if (LevelManager.instance != null)
         {
-            bool isNext = LevelManager.instance.CheckNextLevelAvailable();
+            // Check karna ke next level available hai
+            bool isNext =
+                LevelManager.instance
+                    .CheckNextLevelAvailable();
+
+
+            // Agar next level available hai
+            // to usko unlock karna
             if (isNext)
             {
-                LevelManager.instance.UnlockNextLevel();
+                LevelManager.instance
+                    .UnlockNextLevel();
             }
         }
-        StartCoroutine(ShowLevelCompleteAfterDelay());
+
+
+        // Level complete panel show sequence start
+        yield return StartCoroutine(
+            ShowLevelCompleteAfterDelay()
+        );
     }
+
+
+    // =========================================================
+    // SHOW LEVEL COMPLETE UI
+    // =========================================================
+
     private IEnumerator ShowLevelCompleteAfterDelay()
     {
-        Time.timeScale = 0;
-        yield return new WaitForSecondsRealtime(2f);
+        // Gameplay freeze karna
+        Time.timeScale = 0f;
 
+
+        // Realtime wait use karna zaroori hai,
+        // kyun ke Time.timeScale = 0 hai
+        yield return new WaitForSecondsRealtime(
+            2f
+        );
+
+
+        // Level Complete panel show karna
         if (UIManager.instance != null)
         {
-            // Level Complete panel show karna
-            UIManager.instance.ShowLevelComplete();
+            UIManager.instance
+                .ShowLevelComplete();
         }
+    }
+
+
+    // =========================================================
+    // OPTIONAL GETTER
+    // =========================================================
+
+    // Agar UI/debugging ko remaining bricks chahiye hon
+    public int GetRemainingBricks()
+    {
+        return remainingBricks;
     }
 }

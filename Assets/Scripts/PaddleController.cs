@@ -1,101 +1,211 @@
+using System.Collections;
 using UnityEngine;
 
 public class PaddleController : MonoBehaviour
 {
-    // Paddle kitni tezi se left aur right move karega
+    // =========================================================
+    // MOVEMENT SETTINGS
+    // =========================================================
+
+    [Header("Movement Settings")]
+
+    // Paddle kitni speed se left/right move karega
     [SerializeField] private float speed = 5f;
 
-    // Paddle center se maximum kitna left ya right ja sakta hai
-    //
-    // Positive value right limit hogi
-    // Negative value automatically left limit banegi
+    // Paddle center se maximum X limit
     [SerializeField] private float limitPaddleXPosition = 7.37f;
 
-    // Keyboard se milne wali horizontal direction save hogi
-    //
-    // Left Arrow / A  = -1
-    // Right Arrow / D = 1
-    // Koi key nahi     = 0
+
+    // =========================================================
+    // POWER-UP SETTINGS
+    // =========================================================
+
+    [Header("Power Up Settings")]
+
+    // Expand Paddle kitna wide hoga
+    [SerializeField] private float expandMultiplier = 1.5f;
+
+    // Expand effect kitni der chalega
+    [SerializeField] private float expandDuration = 5f;
+
+
+    // =========================================================
+    // RUNTIME DATA
+    // =========================================================
+
+    // Keyboard input
     private float inputX;
 
-    // Isi Paddle GameObject ke Rigidbody2D ka reference
+    // Paddle Rigidbody2D
     private Rigidbody2D rb;
+
+    // Starting position
     private Vector2 startPosition;
 
+    // Starting scale
+    private Vector3 originalScale;
+
+    // Expand coroutine reference
+    private Coroutine expandCoroutine;
+
+
+    // =========================================================
+    // INITIALIZATION
+    // =========================================================
 
     private void Awake()
     {
-        // Current Paddle GameObject se Rigidbody2D component lena
+        // Rigidbody2D reference lena
         rb = GetComponent<Rigidbody2D>();
 
-        // Agar Paddle par Rigidbody2D nahi laga
-        // to Console mein error show karna
         if (rb == null)
         {
             Debug.LogError(
                 "Paddle GameObject par Rigidbody2D component nahi laga."
             );
         }
+
+        // Original scale save karna
+        originalScale = transform.localScale;
     }
+
 
     private void Start()
     {
-        startPosition = transform.position;
+        // Paddle ki starting position save karna
+        startPosition = rb != null
+            ? rb.position
+            : (Vector2)transform.position;
     }
+
+
+    // =========================================================
+    // INPUT
+    // =========================================================
 
     private void Update()
     {
-        // Har frame keyboard input read karna
-        //
-        // GetAxisRaw smooth value nahi deta
-        // Seedha -1, 0 ya 1 deta hai
+        // Left / Right input
         inputX = Input.GetAxisRaw("Horizontal");
     }
 
+
+    // =========================================================
+    // MOVEMENT
+    // =========================================================
+
     private void FixedUpdate()
     {
-        // Agar Rigidbody2D available nahi hai
-        // to movement code run nahi karna
         if (rb == null)
         {
             return;
         }
 
-        // Paddle ki current X position mein movement add karna
-        //
-        // Direction × Speed × Fixed Time
+        // Current X + input movement
         float xPosition =
             rb.position.x +
-            inputX * speed * Time.fixedDeltaTime;
+            inputX *
+            speed *
+            Time.fixedDeltaTime;
 
-        // Paddle ki nayi position banana
-        //
-        // Sirf X position change hogi
-        // Y position current value par same rahegi
+
+        // X position ko allowed limits ke andar rakhna
+        xPosition = Mathf.Clamp(
+            xPosition,
+            -limitPaddleXPosition,
+            limitPaddleXPosition
+        );
+
+
+        // Nayi position banana
         Vector2 newPosition =
             new Vector2(
                 xPosition,
                 rb.position.y
             );
 
-        // Paddle ko allowed left aur right limits ke andar rakhna
-        //
-        // Example:
-        // Minimum X = -7.37
-        // Maximum X = 7.37
-        newPosition.x = Mathf.Clamp(
-            newPosition.x,
-            -limitPaddleXPosition,
-            limitPaddleXPosition
-        );
 
-        // Rigidbody2D physics system ke through
-        // Paddle ko calculated position par move karna
+        // Physics ke through move karna
         rb.MovePosition(newPosition);
     }
 
+
+    // =========================================================
+    // EXPAND PADDLE POWER-UP
+    // =========================================================
+
+    public void ExpandPaddle()
+    {
+        // Agar pehle se expand coroutine chal rahi ho
+        // to reset karke fresh duration start karna
+        if (expandCoroutine != null)
+        {
+            StopCoroutine(expandCoroutine);
+        }
+
+        expandCoroutine =
+            StartCoroutine(ExpandRoutine());
+    }
+
+
+    private IEnumerator ExpandRoutine()
+    {
+        // Paddle ko X direction mein wide karna
+        transform.localScale =
+            new Vector3(
+                originalScale.x * expandMultiplier,
+                originalScale.y,
+                originalScale.z
+            );
+
+
+        // Temporary effect duration
+        yield return new WaitForSeconds(
+            expandDuration
+        );
+
+
+        // Original size par wapas
+        transform.localScale =
+            originalScale;
+
+
+        expandCoroutine = null;
+    }
+
+
+    // =========================================================
+    // RESET PADDLE
+    // =========================================================
+
     public void ResetPaddle()
     {
-        startPosition = transform.position;
+        // Agar expand effect chal raha ho
+        if (expandCoroutine != null)
+        {
+            StopCoroutine(expandCoroutine);
+            expandCoroutine = null;
+        }
+
+
+        // Paddle size normal karna
+        transform.localScale =
+            originalScale;
+
+
+        // Paddle ko starting position par lana
+        if (rb != null)
+        {
+            rb.position =
+                startPosition;
+
+            rb.linearVelocity =
+                Vector2.zero;
+        }
+        else
+        {
+            transform.position =
+                startPosition;
+        }
     }
 }

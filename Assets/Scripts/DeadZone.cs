@@ -2,30 +2,51 @@
 
 public class DeadZone : MonoBehaviour
 {
-    private void OnTriggerEnter2D(
-        Collider2D other
-    )
+    // =========================================================
+    // TRIGGER DETECTION
+    // =========================================================
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Sirf Ball detect karna
-        if (!other.CompareTag("Ball"))
+        // =====================================================
+        // BALL
+        // =====================================================
+
+        if (other.CompareTag("Ball"))
         {
+            BallMovement ballMovement =
+                other.GetComponent<BallMovement>();
+
+            if (ballMovement == null)
+            {
+                return;
+            }
+
+            // GameManager ko batana ke ye ball miss ho gayi
+            //
+            // IMPORTANT:
+            // Ball death / life loss ka main decision
+            // ek hi jagah handle karna better hai.
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.UnregisterBall(
+                    ballMovement
+                );
+            }
+
             return;
         }
 
-        // BallMovement component lena
-        BallMovement ballMovement =
-            other.GetComponent<BallMovement>();
 
-        if (ballMovement != null)
+        // =====================================================
+        // POWER-UP
+        // =====================================================
+
+        if (other.CompareTag("PowerUp"))
         {
-            // Ab direct LoseLife nahi.
-
-            // Pehle:
-            // 💥 Explosion
-            // phir delay
-            // phir LoseLife
-            ballMovement.ExplodeBall();
-            GameManager.instance.LoseLife(ballMovement);
+            // Jo PowerUp paddle collect nahi kar paya
+            // wo bottom DeadZone touch karte hi remove ho jayega
+            Destroy(other.gameObject);
         }
     }
 }

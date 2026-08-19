@@ -1,28 +1,65 @@
-using UnityEditor.SceneManagement;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    // =========================================================
+    // GAME SETTINGS
+    // =========================================================
+
+    [Header("Lives")]
     [SerializeField] private int lives = 3;
+    [SerializeField] private int maxLives = 3;
+
+    [Header("References")]
     [SerializeField] private BallMovement ballMovement;
     [SerializeField] private PaddleController paddleController;
     [SerializeField] private LivesUI livesUI;
-    // Puri game mein GameManager ka single global reference
+
+
+    // =========================================================
+    // OPTIONAL EXTRA LIFE TEST SPAWNER
+    // =========================================================
+
+    [Header("Extra Life Test")]
+    [SerializeField] private GameObject extraLife;
+
+    private Coroutine extraLifeGenerate;
+
+
+    // =========================================================
+    // SINGLETON
+    // =========================================================
+
+    // Puri game mein GameManager ka global reference
     public static GameManager instance;
 
+
+    // =========================================================
+    // RUNTIME DATA
+    // =========================================================
+
+    // MultiBall system ke liye
+    private int activeBalls = 1;
+
+    // Pause state
     private bool isPaused;
+
+    // Ek hi ball miss par multiple life loss rokne ke liye
     private bool isLosingLife;
+
+
+    // =========================================================
+    // INITIALIZATION
+    // =========================================================
+
     private void Awake()
     {
-        // Agar pehle se koi GameManager instance mojood hai
-        // aur woh current object nahi hai
+        // Duplicate GameManager ko destroy karna
         if (instance != null && instance != this)
         {
-            // Duplicate GameManager destroy karna
             Destroy(gameObject);
-
-            // Neeche ka code run nahi karna
             return;
         }
 
@@ -30,13 +67,36 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
- 
+
+    private void Start()
+    {
+        // Starting lives UI update
+        if (livesUI != null)
+        {
+            livesUI.UpdateLives(lives);
+        }
+
+        /*
+        // Sirf testing ke liye:
+        // Har kuch seconds baad ExtraLife spawn karwana ho
+        if (extraLifeGenerate == null)
+        {
+            extraLifeGenerate =
+                StartCoroutine(ExtraLifeCreate());
+        }
+        */
+    }
+
+
+    // =========================================================
+    // UPDATE / INPUT
+    // =========================================================
+
     private void Update()
     {
-        // Esc key sirf press hone ke moment par check karna
+        // Escape key se Pause / Resume
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Agar game pehle se paused hai
             if (isPaused)
             {
                 ResumeGame();
@@ -48,157 +108,306 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Current level ko dobara load karne wala method
-    // Is method ko Restart button ke OnClick event se call karenge
+
+    // =========================================================
+    // MULTI BALL SYSTEM
+    // =========================================================
+
+    // Extra Ball spawn hone par count increase karna
+    public void RegisterBall()
+    {
+        activeBalls++;
+    }
+
+
+    // Ball DeadZone mein jane par call hoga
+    public void UnregisterBall(BallMovement lostBall)
+    {
+        activeBalls--;
+
+        // -----------------------------------------------------
+        // Agar aur balls abhi game mein hain
+        // -----------------------------------------------------
+
+        if (activeBalls > 0)
+        {
+            if (lostBall.IsExtraBall())
+            {
+                // Extra ball simply destroy
+                Destroy(lostBall.gameObject);
+            }
+            else
+            {
+                // Original ball ko destroy nahi karna
+                // sirf temporary hide karna
+                lostBall.gameObject.SetActive(false);
+            }
+
+            return;
+        }
+
+
+        // -----------------------------------------------------
+        // Last active ball bhi gir gayi
+        // -----------------------------------------------------
+
+        if (lostBall.IsExtraBall())
+        {
+            Destroy(lostBall.gameObject);
+        }
+
+        // Next round mein sirf original ball hogi
+        activeBalls = 1;
+
+
+        // Original Ball ko restore karna
+        if (ballMovement != null)
+        {
+            ballMovement.gameObject.SetActive(true);
+
+            LoseLife(ballMovement);
+        }
+    }
+
+
+    // MultiBall sirf tab allowed hai
+    // jab ek hi ball active ho
+    public bool CanSpawnMultiBall()
+    {
+        return activeBalls == 1;
+    }
+
+
+    // =========================================================
+    // OPTIONAL EXTRA LIFE TEST SPAWNER
+    // =========================================================
+
+    private IEnumerator ExtraLifeCreate()
+    {
+        while (true)
+        {
+            // 5 seconds wait
+            yield return new WaitForSecondsRealtime(5f);
+
+            if (extraLife == null)
+            {
+                continue;
+            }
+
+            // ExtraLife spawn
+            GameObject extraLifeObject =
+                Instantiate(
+                    extraLife,
+                    transform.position,
+                    Quaternion.identity
+                );
+
+            // Testing size
+            extraLifeObject.transform.localScale =
+                Vector3.one * 0.2f;
+
+
+            // 3 seconds visible
+            yield return new WaitForSecondsRealtime(3f);
+
+
+            // Agar abhi collect nahi hui
+            if (extraLifeObject != null)
+            {
+                Destroy(extraLifeObject);
+            }
+        }
+    }
+
+
+    // =========================================================
+    // LEVEL RESTART
+    // =========================================================
+
     public void RestartLevel()
     {
         PlayButtonSound();
-        // Agar game pause thi to time ko normal speed par lana
-        // Time.timeScale = 1 ka matlab normal game speed
+
+        // Pause state remove
         Time.timeScale = 1f;
+        isPaused = false;
 
-        // Jo scene abhi open hai uska build index lena
-        //int currentSceneIndex =
-        //    SceneManager.GetActiveScene().buildIndex;
-
-        //// Current scene ko usi build index se dobara load karna
-        //// Is se poora level restart ho jayega
-        //SceneManager.LoadScene(currentSceneIndex)
-        //
 
         if (LevelManager.instance != null)
         {
             LevelManager.instance.RestartCurrentLevel();
         }
-        ResetLevelState();
 
+
+        ResetLevelState();
     }
 
-    // Puri game ko first level se dobara start karna
+
+    // =========================================================
+    // RESTART WHOLE GAME
+    // =========================================================
+
     public void RestartGame()
     {
         PlayButtonSound();
 
-        // Agar game paused hai to time normal karna
         Time.timeScale = 1f;
+        isPaused = false;
 
-        // Build Profiles mein index 0 wali scene load karna
-        if(LevelManager.instance != null)
-        {     
+
+        if (LevelManager.instance != null)
+        {
             LevelManager.instance.LoadLevel(1);
         }
     }
 
 
-    // Next level load karne wala method
-    // Is method ko Next Level button ke OnClick event se call karenge
+    // =========================================================
+    // NEXT LEVEL
+    // =========================================================
+
     public void LoadNextLevel()
     {
         PlayButtonSound();
 
-        // Agar game pause thi to next scene load karne se pehle
-        // time ko normal speed par lana
         Time.timeScale = 1f;
+        isPaused = false;
 
-        if (LevelManager.instance != null)
+
+        if (LevelManager.instance == null)
         {
-            bool hasNextLevel = LevelManager.instance.LevelCompleted();
+            return;
+        }
 
-            if (hasNextLevel)
+
+        bool hasNextLevel =
+            LevelManager.instance.LevelCompleted();
+
+
+        // -----------------------------------------------------
+        // Next level available
+        // -----------------------------------------------------
+
+        if (hasNextLevel)
+        {
+            if (UIManager.instance != null)
             {
-                if (UIManager.instance != null)
-                {
-                    UIManager.instance.HideLevelComplete();
-                    ResetLevelState();
-                }
+                UIManager.instance.HideLevelComplete();
             }
-            else
+
+            ResetLevelState();
+        }
+
+        // -----------------------------------------------------
+        // Saare levels complete
+        // -----------------------------------------------------
+
+        else
+        {
+            if (UIManager.instance != null)
             {
-                if (UIManager.instance != null)
-                {
-                    UIManager.instance.HideLevelComplete();
-                    UIManager.instance.ShowGameComplete();
-                }
+                UIManager.instance.HideLevelComplete();
+                UIManager.instance.ShowGameComplete();
             }
         }
     }
+
+
+    // =========================================================
+    // START GAME / LEVEL SELECT
+    // =========================================================
+
     public void StartGame()
     {
         PlayButtonSound();
 
-        // Game time normal rakhna
         Time.timeScale = 1f;
+        isPaused = false;
 
-        // Build Profiles mein Level 1 ka index load karna
         SceneManager.LoadScene("LevelSelect");
-
     }
+
+
+    // =========================================================
+    // RESET BALL + PADDLE
+    // =========================================================
+
     private void ResetLevelState()
     {
         if (ballMovement != null)
         {
             ballMovement.ResetBall();
         }
-        if(paddleController == null)
+
+
+        // IMPORTANT:
+        // Pehle yahan == null tha, jo wrong tha
+        if (paddleController != null)
         {
             paddleController.ResetPaddle();
         }
     }
-    // Current scene ke build index mein 1 add karna
-    // Is se next scene ka index milega
-    //        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
-    // Check karna ke next scene Build Profiles mein mojood hai ya nahi
-    //
-    // Example:
-    // Total scenes = 2
-    // Valid indexes = 0 aur 1
-    //if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-    //{
-    // Agar next scene available hai
-    // to us scene ko load karna
-    //SceneManager.LoadScene(nextSceneIndex);
-    //}
-    //else
-    //{
-    // Agar next scene available nahi hai
-    // to iska matlab saare levels co45mplete ho gaye
-    //UIManager.instance.ShowGameComplete();
 
-    // Baad mein yahan Game Complete panel show karenge
-    // UIManager.instance.ShowGameComplete();
-    //}
-    //}
+    // =========================================================
+    // MAIN MENU
+    // =========================================================
 
     public void LoadMainMenu()
     {
         PlayButtonSound();
-        // Agar game paused ho to time normal karna
-        Time.timeScale = 1f;
 
-        // Build Profiles mein index 0 wali MainMenu scene load karna
+        Time.timeScale = 1f;
+        isPaused = false;
+
         SceneManager.LoadScene(0);
     }
 
-    public void AddLife(BallMovement ballMovement)
-    {
-        lives++;
 
-        if (AudioClipManager.instance != null)
+    // =========================================================
+    // ADD LIFE
+    // =========================================================
+
+    public void AddLife()
+    {
+        // Maximum lives se zyada nahi jane dena
+        if (lives >= maxLives)
         {
-            AudioClipManager.instance.PlayLoseLife();
+            lives = maxLives;
+            return;
         }
 
-        Debug.Log(lives);
 
+        // Ek life add
+        lives++;
+
+
+        // Yahan LoseLife sound nahi chalana
+        // Future mein PlayExtraLife() sound bana sakte ho
+
+        /*
+        if (AudioClipManager.instance != null)
+        {
+            AudioClipManager.instance.PlayExtraLife();
+        }
+        */
+
+
+        // Hearts UI update
         if (livesUI != null)
         {
             livesUI.UpdateLives(lives);
         }
     }
 
-    public void LoseLife(BallMovement ballMovement)
+
+    // =========================================================
+    // LOSE LIFE
+    // =========================================================
+
+    public void LoseLife(BallMovement lostBall)
     {
+        // Same miss ko multiple baar process hone se rokna
         if (isLosingLife)
         {
             return;
@@ -206,62 +415,127 @@ public class GameManager : MonoBehaviour
 
         isLosingLife = true;
 
+
+        // Ek life minus
         lives--;
 
+
+        // Lose-life sound sirf ek baar
         if (AudioClipManager.instance != null)
         {
             AudioClipManager.instance.PlayLoseLife();
         }
 
 
-        livesUI.UpdateLives(lives);
+        //Debug.Log("Lives Remaining: " + lives);
+
+
+        // Hearts UI update
+        if (livesUI != null)
+        {
+            livesUI.UpdateLives(lives);
+        }
+
+
+        // -----------------------------------------------------
+        // GAME OVER
+        // -----------------------------------------------------
 
         if (lives <= 0)
         {
-            if (AudioClipManager.instance)
+            lives = 0;
+
+
+            if (AudioClipManager.instance != null)
             {
                 AudioClipManager.instance.PlayGameOver();
             }
-            UIManager.instance.ShowGameOver();
-        }
-        else
-        {
-            if (AudioClipManager.instance)
+
+
+            if (UIManager.instance != null)
             {
-                AudioClipManager.instance.PlayLoseLife();
+                UIManager.instance.ShowGameOver();
             }
 
-            ballMovement.ResetBall();
+            return;
         }
+
+
+        // -----------------------------------------------------
+        // LIFE STILL REMAINS
+        // -----------------------------------------------------
+
+        if (lostBall != null)
+        {
+            lostBall.ResetBall();
+        }
+
+
+        // Thori protection delay
+        StartCoroutine(
+            AllowLifeLossAfterDelay()
+        );
     }
 
-    // Game ko pause karna
+
+    // =========================================================
+    // LIFE LOSS COOLDOWN
+    // =========================================================
+
+    private IEnumerator AllowLifeLossAfterDelay()
+    {
+        // TimeScale ko ignore karega
+        yield return new WaitForSecondsRealtime(0.5f);
+
+        isLosingLife = false;
+    }
+
+
+    // =========================================================
+    // PAUSE
+    // =========================================================
+
     public void PauseGame()
     {
         PlayButtonSound();
 
         isPaused = true;
 
-        // Game ka waqt rokna
+        // Game freeze
         Time.timeScale = 0f;
 
-        // Pause panel show karna
-        UIManager.instance.ShowPausePanel();
+
+        if (UIManager.instance != null)
+        {
+            UIManager.instance.ShowPausePanel();
+        }
     }
 
-    // Game ko dobara continue karna
+
+    // =========================================================
+    // RESUME
+    // =========================================================
+
     public void ResumeGame()
     {
         PlayButtonSound();
 
         isPaused = false;
 
-        // Game ka waqt normal karna
+        // Normal game speed
         Time.timeScale = 1f;
 
-        // Pause panel hide karna
-        UIManager.instance.HidePausePanel();
+
+        if (UIManager.instance != null)
+        {
+            UIManager.instance.HidePausePanel();
+        }
     }
+
+
+    // =========================================================
+    // BUTTON SOUND
+    // =========================================================
 
     private void PlayButtonSound()
     {
@@ -270,10 +544,16 @@ public class GameManager : MonoBehaviour
             AudioClipManager.instance.PlayButtonClick();
         }
     }
+
+
+    // =========================================================
+    // QUIT GAME
+    // =========================================================
+
     public void QuitGame()
     {
         PlayButtonSound();
+
         Application.Quit();
     }
-
 }

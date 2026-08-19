@@ -216,10 +216,10 @@ TextureImporter:
       name: ChatGPT Image Aug 14, 2026, 03_57_14 PM_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 296
-        width: 417
-        height: 412
+        x: 129
+        y: 340
+        width: 345
+        height: 334
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,13 +235,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChatGPT Image Aug 14, 2026, 03_57_14 PM_4
+      name: ExtraLife
       rect:
         serializedVersion: 2
-        x: 533
-        y: 317
-        width: 449
-        height: 390
+        x: 592
+        y: 354
+        width: 347
+        height: 287
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,9 +261,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1079
-        y: 310
-        width: 417
-        height: 363
+        y: 347
+        width: 332
+        height: 312
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,9 +283,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 93
-        y: 0
+        y: 60
         width: 1349
-        height: 277
+        height: 217
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       ChatGPT Image Aug 14, 2026, 03_57_14 PM_1: 3102152145665318825
       ChatGPT Image Aug 14, 2026, 03_57_14 PM_2: -376436122557435322
       ChatGPT Image Aug 14, 2026, 03_57_14 PM_3: -8860114826422726536
-      ChatGPT Image Aug 14, 2026, 03_57_14 PM_4: -208086287304711271
       ChatGPT Image Aug 14, 2026, 03_57_14 PM_5: -5884633407731798595
       ChatGPT Image Aug 14, 2026, 03_57_14 PM_6: 8130547645659454401
       ChatGPT Image Aug 14, 2026, 03_57_14 PM_7: 6364431622726512481
+      ExtraLife: -208086287304711271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

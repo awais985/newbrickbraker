@@ -3,203 +3,351 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    // AudioManager ko doosri scripts se access karne ke liye singleton
+    // =========================================================
+    // SINGLETON
+    // =========================================================
+
+    // Doosri scripts se AudioManager ko globally access karne ke liye
     public static AudioManager instance;
 
-    // Background music play karne wala AudioSource
+
+    // =========================================================
+    // AUDIO SOURCES
+    // =========================================================
+
+    [Header("Audio Sources")]
+
+    // Background music play karega
     [SerializeField] private AudioSource musicSource;
 
-    // Brick hit, button click waghera play karne wala AudioSource
+    // Button, brick, paddle waghera ke SFX play karega
     [SerializeField] private AudioSource sfxSource;
 
-    // Music fade-out aur fade-in ki speed
+
+    // =========================================================
+    // MUSIC SETTINGS
+    // =========================================================
+
+    [Header("Music Settings")]
+
+    // Music fade-in / fade-out speed
     [SerializeField] private float musicFadeSpeed = 2f;
 
-    [SerializeField] private float maxMusicVolumeLimit = 0.6f;
+    // Music ki maximum actual volume
+    //
+    // Example:
+    // Slider = 1.0
+    // Max Limit = 0.6
+    // Actual Volume = 0.6
+    [SerializeField, Range(0f, 1f)]
+    private float maxMusicVolumeLimit = 0.6f;
 
 
-    // Is reference mein currently chalne wali
-    // music transition coroutine save hogi
+    // =========================================================
+    // PLAYER PREF KEYS
+    // =========================================================
+
+    private const string MusicVolumeKey = "MusicVolume";
+    private const string SFXVolumeKey = "SFXVolume";
+
+    private const string MusicMutedKey = "MusicMuted";
+    private const string SFXMutedKey = "SFXMuted";
+
+
+    // =========================================================
+    // RUNTIME DATA
+    // =========================================================
+
+    // Currently running music transition coroutine
     private Coroutine musicTransition;
+
+
+    // =========================================================
+    // INITIALIZATION
+    // =========================================================
 
     private void Awake()
     {
         // Agar pehle se AudioManager mojood hai
-        // aur ye us se alag duplicate object hai
+        // to duplicate destroy karna
         if (instance != null && instance != this)
         {
-            // Duplicate AudioManager ko delete karna
             Destroy(gameObject);
             return;
         }
 
-        // Current AudioManager ko singleton instance banana
+
+        // Current object ko main AudioManager banana
         instance = this;
 
-        // Scene change hone par AudioManager ko destroy na karna
+
+        // Scene change ke baad bhi AudioManager alive rahega
         DontDestroyOnLoad(gameObject);
 
-        // Saved music settings load karna
-        LoadMusicSettings();
 
-        // Saved SFX settings load karna
+        // Saved audio settings load karna
+        LoadMusicSettings();
         LoadSFXSettings();
     }
 
+
+    // =========================================================
+    // LOAD MUSIC SETTINGS
+    // =========================================================
+
     private void LoadMusicSettings()
     {
-        // Music AudioSource assign na ho to method rok dena
         if (musicSource == null)
         {
             return;
         }
 
-        // Saved music mute state lena
-        // Setting na mile to default 0, yani unmuted
+
+        // Saved mute setting
+        //
+        // Default 0 = unmuted
         int savedMusicMute =
-            PlayerPrefs.GetInt("MusicMuted", 0);
+            PlayerPrefs.GetInt(
+                MusicMutedKey,
+                0
+            );
 
-        // Saved music volume lena
-        // Setting na mile to default full volume 1
+
+        // Saved slider volume
+        //
+        // Default 1 = slider full
         float savedMusicVolume =
-            PlayerPrefs.GetFloat("MusicVolume", 1f);
+            PlayerPrefs.GetFloat(
+                MusicVolumeKey,
+                1f
+            );
 
-        // 1 ho to mute true, 0 ho to mute false
-        musicSource.mute = savedMusicMute == 1;
 
-        // Saved volume AudioSource par apply karna
-        musicSource.volume = savedMusicVolume * maxMusicVolumeLimit;
+        savedMusicVolume =
+            Mathf.Clamp01(savedMusicVolume);
+
+
+        // Mute state apply
+        musicSource.mute =
+            savedMusicMute == 1;
+
+
+        // Actual music volume par
+        // maximum limit apply karna
+        musicSource.volume =
+            savedMusicVolume *
+            maxMusicVolumeLimit;
     }
+
+
+    // =========================================================
+    // LOAD SFX SETTINGS
+    // =========================================================
 
     private void LoadSFXSettings()
     {
-        // SFX AudioSource assign na ho to method rok dena
         if (sfxSource == null)
         {
             return;
         }
 
-        // Saved SFX mute state lena
+
+        // Saved mute state
         int savedSFXMute =
-            PlayerPrefs.GetInt("SFXMuted", 0);
+            PlayerPrefs.GetInt(
+                SFXMutedKey,
+                0
+            );
 
-        // Saved SFX volume lena
+
+        // Saved SFX volume
         float savedSFXVolume =
-            PlayerPrefs.GetFloat("SFXVolume", 1f);
+            PlayerPrefs.GetFloat(
+                SFXVolumeKey,
+                1f
+            );
 
-        // Saved mute state apply karna
-        sfxSource.mute = savedSFXMute == 1;
 
-        // Saved volume apply karna
-        sfxSource.volume = savedSFXVolume;
+        savedSFXVolume =
+            Mathf.Clamp01(savedSFXVolume);
+
+
+        // Settings apply
+        sfxSource.mute =
+            savedSFXMute == 1;
+
+        sfxSource.volume =
+            savedSFXVolume;
     }
 
-    // Short sound effect play karna
+
+    // =========================================================
+    // PLAY SFX
+    // =========================================================
+
     public void PlaySFX(AudioClip clip)
     {
-        // Clip ya SFX source missing ho to sound play na karna
-        if (clip == null || sfxSource == null)
+        // Missing clip/source ko ignore karna
+        if (clip == null ||
+            sfxSource == null)
         {
             return;
         }
 
-        // Ek hi AudioSource se multiple SFX overlap ho sakti hain
+
+        // PlayOneShot se multiple SFX
+        // ek hi source par overlap kar sakti hain
         sfxSource.PlayOneShot(clip);
     }
 
-    // Scene ke mutabiq background music play/change karna
+
+    // =========================================================
+    // PLAY / CHANGE MUSIC
+    // =========================================================
+
     public void PlayMusic(AudioClip musicClip)
     {
-        // Music clip ya Music AudioSource missing ho to return
-        if (musicClip == null || musicSource == null)
+        if (musicClip == null ||
+            musicSource == null)
         {
             return;
         }
 
-        // Agar yehi music pehle se chal rahi hai
-        // to usay dobara restart na karna
+
+        // Agar same music already chal rahi hai
+        // to usko restart nahi karna
         if (musicSource.clip == musicClip &&
             musicSource.isPlaying)
         {
             return;
         }
 
-        // Agar pehle se koi music transition chal rahi hai
-        // to usay stop karna
+
+        // Previous transition chal rahi ho
+        // to usko stop karna
         if (musicTransition != null)
         {
             StopCoroutine(musicTransition);
         }
 
-        // Nayi music transition start karke reference save karna
-        musicTransition = StartCoroutine(
-            ChangeMusicRoutine(musicClip)
-        );
+
+        // New transition start
+        musicTransition =
+            StartCoroutine(
+                ChangeMusicRoutine(
+                    musicClip
+                )
+            );
     }
 
-    // Purani music fade-out aur nayi music fade-in karna
+
+    // =========================================================
+    // MUSIC FADE TRANSITION
+    // =========================================================
+
     private IEnumerator ChangeMusicRoutine(
         AudioClip newMusicClip
     )
     {
-        // Player ki saved music volume lena
+        // Player ki saved slider value
+        float savedVolume =
+            PlayerPrefs.GetFloat(
+                MusicVolumeKey,
+                1f
+            );
+
+
+        savedVolume =
+            Mathf.Clamp01(savedVolume);
+
+
+        // IMPORTANT:
+        // Maximum music limit yahan bhi apply karni hai
         float targetVolume =
-            PlayerPrefs.GetFloat("MusicVolume", 1f);
+            savedVolume *
+            maxMusicVolumeLimit;
 
-        // Value ko safe 0–1 range mein rakhna
-        targetVolume = Mathf.Clamp01(targetVolume);
 
-        // Agar pehle koi music chal rahi hai
-        // to usay dheere-dheere fade-out karna
+        // -----------------------------------------------------
+        // FADE OUT OLD MUSIC
+        // -----------------------------------------------------
+
         if (musicSource.isPlaying)
         {
             while (musicSource.volume > 0f)
             {
-                musicSource.volume = Mathf.MoveTowards(
-                    musicSource.volume,
-                    0f,
-                    musicFadeSpeed * Time.unscaledDeltaTime
-                );
+                musicSource.volume =
+                    Mathf.MoveTowards(
+                        musicSource.volume,
+                        0f,
+                        musicFadeSpeed *
+                        Time.unscaledDeltaTime
+                    );
 
-                // Next frame tak wait karna
                 yield return null;
             }
         }
 
-        // Nayi music clip assign karna
-       musicSource.clip = newMusicClip;
+
+        // Old music completely stop
+        musicSource.Stop();
 
 
-        // Background music repeat hoti rahe
-        musicSource.loop = true;
+        // -----------------------------------------------------
+        // SET NEW MUSIC
+        // -----------------------------------------------------
 
-        // Fade-in zero volume se start karna
-        musicSource.volume = 0f;
+        musicSource.clip =
+            newMusicClip;
 
-        // Nayi music play karna
+
+        // Background music continuously repeat hogi
+        musicSource.loop =
+            true;
+
+
+        // Fade-in zero volume se start
+        musicSource.volume =
+            0f;
+
+
         musicSource.Play();
 
-        // Music ko zero se saved volume tak fade-in karna
-        while (musicSource.volume < targetVolume)
-        {
-            musicSource.volume = Mathf.MoveTowards(
-                musicSource.volume,
-                targetVolume,
-                musicFadeSpeed * Time.unscaledDeltaTime
-            );
 
-            // Next frame tak wait karna
+        // -----------------------------------------------------
+        // FADE IN NEW MUSIC
+        // -----------------------------------------------------
+
+        while (musicSource.volume <
+               targetVolume)
+        {
+            musicSource.volume =
+                Mathf.MoveTowards(
+                    musicSource.volume,
+                    targetVolume,
+                    musicFadeSpeed *
+                    Time.unscaledDeltaTime
+                );
+
             yield return null;
         }
 
-        // Exact target volume ensure karna
-        musicSource.volume = targetVolume;
 
-        // Transition complete ho gayi
-        musicTransition = null;
+        // Exact final volume
+        musicSource.volume =
+            targetVolume;
+
+
+        // Transition finish
+        musicTransition =
+            null;
     }
 
-    // Background music temporary pause karna
+
+    // =========================================================
+    // PAUSE MUSIC
+    // =========================================================
+
     public void PauseMusic()
     {
         if (musicSource != null)
@@ -208,7 +356,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Paused music ko wahi position se continue karna
+
+    // =========================================================
+    // RESUME MUSIC
+    // =========================================================
+
     public void ResumeMusic()
     {
         if (musicSource != null)
@@ -217,7 +369,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Background music ko completely stop karna
+
+    // =========================================================
+    // STOP MUSIC
+    // =========================================================
+
     public void StopMusic()
     {
         if (musicSource == null)
@@ -225,17 +381,27 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Agar transition coroutine chal rahi ho to stop karna
+
+        // Current fade transition stop
         if (musicTransition != null)
         {
-            StopCoroutine(musicTransition);
-            musicTransition = null;
+            StopCoroutine(
+                musicTransition
+            );
+
+            musicTransition =
+                null;
         }
+
 
         musicSource.Stop();
     }
 
-    // SFX Slider se volume change karna
+
+    // =========================================================
+    // SET SFX VOLUME
+    // =========================================================
+
     public void SetSFXVolume(float volume)
     {
         if (sfxSource == null)
@@ -243,22 +409,31 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Slider value ko safe 0–1 range mein rakhna
-        float safeVolume = Mathf.Clamp01(volume);
 
-        // SFX volume apply karna
-        sfxSource.volume = safeVolume;
+        // Slider value 0–1 ke andar
+        float safeVolume =
+            Mathf.Clamp01(volume);
 
-        // Volume save karna
+
+        // AudioSource par apply
+        sfxSource.volume =
+            safeVolume;
+
+
+        // Save setting
         PlayerPrefs.SetFloat(
-            "SFXVolume",
+            SFXVolumeKey,
             safeVolume
         );
 
         PlayerPrefs.Save();
     }
 
-    // Music Slider se volume change karna
+
+    // =========================================================
+    // SET MUSIC VOLUME
+    // =========================================================
+
     public void SetMusicVolume(float volume)
     {
         if (musicSource == null)
@@ -266,23 +441,36 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Slider ki value 0 se 1 ke andar rakhna
-        float musicVolume = Mathf.Clamp01(volume);
 
-        // Slider 100% ho tab bhi actual music maximum 60% hogi
+        // Slider value ko 0–1 range mein rakhna
+        float safeVolume =
+            Mathf.Clamp01(volume);
+
+
+        // Actual AudioSource volume
+        //
+        // Slider 100% ho tab bhi
+        // maxMusicVolumeLimit se zyada nahi jayegi
         musicSource.volume =
-            musicVolume * maxMusicVolumeLimit;
+            safeVolume *
+            maxMusicVolumeLimit;
 
-        // PlayerPrefs mein slider ki original value save karna
+
+        // PlayerPrefs mein slider ki
+        // original 0–1 value save karna
         PlayerPrefs.SetFloat(
-            "MusicVolume",
-            musicVolume
+            MusicVolumeKey,
+            safeVolume
         );
 
         PlayerPrefs.Save();
     }
 
-    // SFX mute/unmute toggle karna
+
+    // =========================================================
+    // TOGGLE SFX MUTE
+    // =========================================================
+
     public void ToggleSFXMute()
     {
         if (sfxSource == null)
@@ -290,19 +478,28 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Current mute state ko ulta karna
-        sfxSource.mute = !sfxSource.mute;
 
-        // true ko 1 aur false ko 0 save karna
+        // Current state reverse
+        sfxSource.mute =
+            !sfxSource.mute;
+
+
+        // Save:
+        // true  = 1
+        // false = 0
         PlayerPrefs.SetInt(
-            "SFXMuted",
+            SFXMutedKey,
             sfxSource.mute ? 1 : 0
         );
 
         PlayerPrefs.Save();
     }
 
-    // Music mute/unmute toggle karna
+
+    // =========================================================
+    // TOGGLE MUSIC MUTE
+    // =========================================================
+
     public void ToggleMusicMute()
     {
         if (musicSource == null)
@@ -310,15 +507,56 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // Current music mute state ko ulta karna
-        musicSource.mute = !musicSource.mute;
 
-        // Music ki apni mute state save karna
+        // Current mute state reverse
+        musicSource.mute =
+            !musicSource.mute;
+
+
+        // Save state
         PlayerPrefs.SetInt(
-            "MusicMuted",
+            MusicMutedKey,
             musicSource.mute ? 1 : 0
         );
 
         PlayerPrefs.Save();
+    }
+
+
+    // =========================================================
+    // OPTIONAL GETTERS
+    // =========================================================
+
+    // Settings UI ko current Music volume chahiye ho
+    public float GetMusicVolume()
+    {
+        return PlayerPrefs.GetFloat(
+            MusicVolumeKey,
+            1f
+        );
+    }
+
+
+    // Settings UI ko current SFX volume chahiye ho
+    public float GetSFXVolume()
+    {
+        return PlayerPrefs.GetFloat(
+            SFXVolumeKey,
+            1f
+        );
+    }
+
+
+    public bool IsMusicMuted()
+    {
+        return musicSource != null &&
+               musicSource.mute;
+    }
+
+
+    public bool IsSFXMuted()
+    {
+        return sfxSource != null &&
+               sfxSource.mute;
     }
 }
