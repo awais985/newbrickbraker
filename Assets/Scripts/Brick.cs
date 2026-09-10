@@ -258,27 +258,27 @@ public class Brick : MonoBehaviour
     }
 
 
-    public void TestBreakBrick()
-    {
-        // Testing only
-        if (isBreaking)
-        {
-            return;
-        }
+    //public void TestBreakBrick()
+    //{
+    //    // Testing only
+    //    if (isBreaking)
+    //    {
+    //        return;
+    //    }
 
-        if (brickData == null)
-        {
-            return;
-        }
+    //    if (brickData == null)
+    //    {
+    //        return;
+    //    }
 
-        // Unbreakable brick ko testing mein bhi na todo
-        if (brickData.unbreakable)
-        {
-            return;
-        }
+    //    // Unbreakable brick ko testing mein bhi na todo
+    //    if (brickData.unbreakable)
+    //    {
+    //        return;
+    //    }
 
-        BreakBrick();
-    }
+    //    BreakBrick();
+    //}
 
     // =========================================================
     // HIT PUNCH EFFECT

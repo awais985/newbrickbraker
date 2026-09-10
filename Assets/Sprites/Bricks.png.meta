@@ -1,0 +1,1356 @@
+fileFormatVersion: 2
+guid: 95c3986454b449044b44f0d09b38f7cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2830567003312114784
+    second: ChatGPT Image Sep 6, 2026, 09_11_29 PM_0
+  - first:
+      213: 548416422987241418
+    second: ChatGPT Image Sep 6, 2026, 09_11_29 PM_1
+  - first:
+      213: 6220867996447033443
+    second: ChatGPT Image Sep 6, 2026, 09_11_29 PM_2
+  - first:
+      213: 4824343949687894369
+    second: ChatGPT Image Sep 6, 2026, 09_11_29 PM_3
+  - first:
+      213: -2645598659668782531
+    second: ChatGPT Image Sep 6, 2026, 09_11_29 PM_4
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red_Brick
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 747
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797acc0eff9ed36458c698701769d064
+      internalID: 2072697532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 330
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae720cd0b3ed8c409f109098a09a730
+      internalID: -591700580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 180
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4756594e016e38b4c9858e5939f0cbbb
+      internalID: 665363211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 754
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a3fcdb18f5c564f915dd957b310e6d
+      internalID: -812304182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 749
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc967cb4b9fe56545bde969a7d30a988
+      internalID: -195642518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_5
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 749
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a70c28a307f2464ab79c33d0c5bc708
+      internalID: -738769610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 662
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f40bf72e6a130545aa13df032f35e9d
+      internalID: -47465954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 577
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e795a055a720b54280bf79b3f624245
+      internalID: 1589957329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 492
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e84a60c53767f4f95380b6da5783eb
+      internalID: -682015601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 407
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68430f0e94f3cdb46a8c9c7e08c67c60
+      internalID: -1811200551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 253
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65736573283a80478662a65f34e40d7
+      internalID: -534143778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 330
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1829d5a450ca86d469b165ab3e717b81
+      internalID: 1164273925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 180
+        width: 350
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb54907365a32e4e9040a0fd5b0e748
+      internalID: 1841486311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 103
+        width: 350
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f203022455ffd4ba815ed395553004
+      internalID: -1913095036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bricks_14
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 103
+        width: 350
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7027163222afead4ead497505b1984c9
+      internalID: 1797093690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Brick
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 14
+        width: 345
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b02cc5bcc6e0f840bb1224c3cca506e
+      internalID: -820381839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 180
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453e46d316880a84d984609f7c5c7357
+      internalID: 1383299339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 747
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948c311384025c84bb5a709abafdcecd
+      internalID: 403300689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 577
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98564906dd4664941a8056cbdda8bb6c
+      internalID: -1702781368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 492
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ee99338e207144ab1641fecaefc397
+      internalID: -459725272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 407
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea563aec8151c084a87fcde35dbab4cf
+      internalID: -867200999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 253
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f5150748d715644b6e7ee14e98eca0
+      internalID: 717893116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 664
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f72d75b8ea9e34db966db005707a6d
+      internalID: -1903453437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 101
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde9ec4bac148e64aa9faf221c1502f0
+      internalID: -1613375243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 14
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b1187140506ee4a821fe8e68d45681
+      internalID: -957992803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 747
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a2efa1de7495f42ae37e4966b7edd4
+      internalID: -1876734830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 664
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399f0b86012a8814e94eca003ac0cf75
+      internalID: 1409218370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 577
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575cad9400d2a084ca97c152db315104
+      internalID: -1969293216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 492
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b41e1ecc679f8f43a319a033e6ba9b6
+      internalID: 1714199301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 407
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3b78091d061d7499ba2d051b9994c7
+      internalID: 169144788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 330
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7571011cd3055c418807ef3f7a00d81
+      internalID: 1593228130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 14
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdb985e490f76a40b1669d462b1924b
+      internalID: -1639454752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 103
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385cf9a51a3976843818c3bfbcdae177
+      internalID: 2040533922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 492
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3885c3d21506cea4480d3420d88f00f9
+      internalID: -2080473409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 577
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f912948f1c48fbb4dadd9cd63dc495f1
+      internalID: 290619528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 664
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098a34c960b2b89458d9f60bfcc14f68
+      internalID: -1363541168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 664
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eced4f3b96b3445a6854584ece64ef
+      internalID: -1793642694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 577
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cf6378f34735448bfd65fc2a31f724
+      internalID: -261139271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 492
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e45666ca57c3d40b2822004df103a5
+      internalID: 1764385052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 14
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62e3b52a40052a41b25822f71503d8a
+      internalID: -445597433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 253
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19926f1d3c6108e42925400ca362b50e
+      internalID: 1463712830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 409
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5005ef91ba95a894d94d73ed8efe0f59
+      internalID: 1787326107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priple_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 407
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3932c21ef076cca44963ed7cd3a1db61
+      internalID: 1081606049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 330
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b26f3d405b2544fa3dc196e2a69453
+      internalID: 1991761452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 330
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e74449269c4a948abaa51960684c9b
+      internalID: -2110596086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick_Locked
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 253
+        width: 350
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4cdae436d31fa4e93262233c87579e
+      internalID: 1065113096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 253
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ac8447c92d83c41b78971f91b4107e
+      internalID: 227060524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 14
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fb7aaff34f7f04b9c9de6fc1c69a4f
+      internalID: 297714696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sly_Blue_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 180
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9015c12fddb93b4badbcb569df68893
+      internalID: -369559665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 180
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32218026b7454224992f2bf89e4c1ad8
+      internalID: 736475896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick_Solid
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 103
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15eb4b18344ba644c943b7b4a0f1972d
+      internalID: -1361247720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick_PowerUp
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 103
+        width: 350
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9b955273286ac469c340987dd8fb2a
+      internalID: -362515978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36ad6bff61776b94cae83abba39fb280
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1535.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Black_Brick: -820381839
+      Black_Brick_Break: -957992803
+      Black_Brick_Locked: -1639454752
+      Black_Brick_PowerUp: 297714696
+      Black_Brick_Solid: -445597433
+      Blue_Brick: -47465954
+      Blue_Brick_Break: -1903453437
+      Blue_Brick_Locked: 1409218370
+      Blue_Brick_PowerUp: -1793642694
+      Blue_Brick_Solid: -1363541168
+      Bricks_14: 1797093690
+      Bricks_5: -738769610
+      Gray_Brick: -1913095036
+      Gray_Brick_Break: -1613375243
+      Gray_Brick_Locked: 2040533922
+      Gray_Brick_PowerUp: -362515978
+      Gray_Brick_Solid: -1361247720
+      Green_Brick: -682015601
+      Green_Brick_Break: -459725272
+      Green_Brick_Locked: 1714199301
+      Green_Brick_PowerUp: 1764385052
+      Green_Brick_Solid: -2080473409
+      Orange_Brick: 1164273925
+      Orange_Brick_Break: -591700580
+      Orange_Brick_Locked: 1593228130
+      Orange_Brick_PowerUp: -2110596086
+      Orange_Brick_Solid: 1991761452
+      Pink_Brick: -534143778
+      Pink_Brick_Break: 717893116
+      Pink_Brick_Locked: 1065113096
+      Pink_Brick_PowerUp: 1463712830
+      Pink_Brick_Solid: 227060524
+      Priple_Brick_PowerUp: 1081606049
+      Purple_Brick: -1811200551
+      Purple_Brick_Break: -867200999
+      Purple_Brick_Locked: 169144788
+      Purple_Brick_Solid: 1787326107
+      Red_Brick: 2072697532
+      Red_Brick_Break: 403300689
+      Red_Brick_Locked: -1876734830
+      Red_Brick_PowerUp: -195642518
+      Red_Brick_Solid: -812304182
+      Sky_Blue_Brick: 1841486311
+      Sky_Blue_Brick_Break: 1383299339
+      Sky_Blue_Brick_Locked: 665363211
+      Sky_Blue_Brick_Solid: 736475896
+      Sly_Blue_Brick_PowerUp: -369559665
+      Yellow_Brick: 1589957329
+      Yellow_Brick_Break: -1702781368
+      Yellow_Brick_Locked: -1969293216
+      Yellow_Brick_PowerUp: 290619528
+      Yellow_Brick_Solid: -261139271
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

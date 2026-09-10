@@ -214,6 +214,13 @@ public class LevelManager : MonoBehaviour
             return;
         }
 
+        // Current level ke liye score reset/load
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.StartLevel(
+                currentIndex + 1
+            );
+        }
 
         // New level ke bricks create karna
         brickSpawner.BuildLevel(

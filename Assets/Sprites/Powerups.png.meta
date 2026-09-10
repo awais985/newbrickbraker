@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: a08896369c9bb05448a28bc90c9baeac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2540521342427304384
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_0
+  - first:
+      213: 567315262373731053
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_1
+  - first:
+      213: -6083828459332934169
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_2
+  - first:
+      213: -5880541220752802566
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_3
+  - first:
+      213: 723158665575345469
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_4
+  - first:
+      213: 228119990713703757
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_5
+  - first:
+      213: 1239124165951122387
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_6
+  - first:
+      213: 1870008175408180711
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_7
+  - first:
+      213: -4687464970484643558
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_8
+  - first:
+      213: -7458968272704076179
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_9
+  - first:
+      213: -3029223368528343728
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_10
+  - first:
+      213: -6396876847846382457
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_11
+  - first:
+      213: 6347787583467138658
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_12
+  - first:
+      213: -8522291659388593098
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_13
+  - first:
+      213: -4013379549717549055
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_14
+  - first:
+      213: -3193744421447753525
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_15
+  - first:
+      213: 1690755775158770637
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_16
+  - first:
+      213: -8496969078965235638
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_17
+  - first:
+      213: 6398291366086489899
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_18
+  - first:
+      213: -8466601296095000229
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_19
+  - first:
+      213: -3165588984276010462
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_20
+  - first:
+      213: 7255833715608982117
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_21
+  - first:
+      213: 6792212566242002747
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_22
+  - first:
+      213: 288873495547900516
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_23
+  - first:
+      213: -6091044221433441742
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_24
+  - first:
+      213: -6976764644211303871
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_25
+  - first:
+      213: 1493961020260961729
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_26
+  - first:
+      213: 226199151443531422
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_27
+  - first:
+      213: 754879221310057365
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_28
+  - first:
+      213: 773561824032643921
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_29
+  - first:
+      213: -8387144921725532637
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_30
+  - first:
+      213: -5412890421259302803
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_31
+  - first:
+      213: 809099978550022063
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_32
+  - first:
+      213: 3804416098206734839
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_33
+  - first:
+      213: -7718909326168986666
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_34
+  - first:
+      213: 5287362114086535596
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_35
+  - first:
+      213: 6895148503564457111
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_36
+  - first:
+      213: -2971300186353423774
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_37
+  - first:
+      213: -5846902985044012057
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_38
+  - first:
+      213: 843137976904490033
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_39
+  - first:
+      213: -3861800748828884577
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_40
+  - first:
+      213: -3509011894809082189
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_41
+  - first:
+      213: 4635783086065000966
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_42
+  - first:
+      213: 4113832728255782865
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_43
+  - first:
+      213: -2796920412637416575
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_44
+  - first:
+      213: 952915181127001936
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_45
+  - first:
+      213: -1564075182288586390
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_46
+  - first:
+      213: 8348074805912667241
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_47
+  - first:
+      213: 5520325383328764368
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_48
+  - first:
+      213: 3327482812686069722
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_49
+  - first:
+      213: -5815934377085334951
+    second: ChatGPT Image Sep 6, 2026, 09_14_25 PM_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ExtraLife
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 684
+        width: 291
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf59758bda0f0e54390be66c94eef5a4
+      internalID: -960718673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MultiBall
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 681
+        width: 310
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceda7897b87b7ef40ae3c94ffbcf59db
+      internalID: -363725552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExpandPaddle
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 683
+        width: 310
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80770e3c219395d40a5e3afddad6380e
+      internalID: -833843769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShrinkPaddle
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 679
+        width: 310
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd2c87b901c2bb4d972a133785b9aa2
+      internalID: 121746950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerups_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 400
+        width: 310
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abadbd61b570e64ea990442207f0535
+      internalID: 12814768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlowBall
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 396
+        width: 358
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fceb0c53649303b40b8b7a023ed96a3b
+      internalID: 1921358494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerups_6
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 391
+        width: 313
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf87afea845a2924dbc85f42d7c239a6
+      internalID: -55212920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BottomShield
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 389
+        width: 324
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83a96d8d2f7d9646be5d1e841093a83
+      internalID: -1168027890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerups_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 101
+        width: 311
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb334fbeb9f94e45a689c9d036bb35b
+      internalID: -691124864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerups_9
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 101
+        width: 327
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3389032b54c0ac946897373df72ba39d
+      internalID: 1754703811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 999b8a153c6d0b243a5fea1a0f2631d0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1535.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BottomShield: -1168027890
+      ExpandPaddle: -833843769
+      ExtraLife: -960718673
+      MultiBall: -363725552
+      Powerups_4: 12814768
+      Powerups_6: -55212920
+      Powerups_8: -691124864
+      Powerups_9: 1754703811
+      ShrinkPaddle: 121746950
+      SlowBall: 1921358494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

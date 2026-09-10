@@ -8,5 +8,5 @@ public class BrickData : ScriptableObject
     public int score = 10;
     public bool unbreakable;
     public Sprite damagedSprite;
-
+    public bool locked;
 }

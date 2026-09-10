@@ -15,7 +15,7 @@ public class BrickClickTest : MonoBehaviour
             // Brick.cs mein BreakBrick()
             // private hai, isliye testing ke liye
             // ek public method banana hoga.
-            brick.TestBreakBrick();
+          //  brick.TestBreakBrick();
         }
     }
 }

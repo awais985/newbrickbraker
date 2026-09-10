@@ -2,43 +2,143 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    // Puri game mein ScoreManager ka single global reference
-    // Iske through doosri scripts score system ko access kar sakti hain
+    // =========================================================
+    // SINGLETON
+    // =========================================================
+
     public static ScoreManager instance;
 
-    // Player ka current score store karega
+
+    // =========================================================
+    // SCORE DATA
+    // =========================================================
+
+    // Current level mein player ka score
     private int score;
+
+    // Human-readable level number
+    // Level 1 = 1
+    // Level 2 = 2
+    private int currentLevelNumber = 1;
+
+
+    // =========================================================
+    // INITIALIZATION
+    // =========================================================
 
     private void Awake()
     {
-        // Agar pehle se koi ScoreManager instance mojood hai
-        // aur woh current object nahi hai
         if (instance != null && instance != this)
         {
-            // Duplicate ScoreManager GameObject destroy karna
             Destroy(gameObject);
-
-            // Neeche ka code run nahi karna
             return;
         }
 
-        // Current ScoreManager ko main instance banana
         instance = this;
     }
 
-    // Score mein naya amount add karne wala method
-    // Example:
-    // AddScore(10) se score mein 10 add hoga
-    public void AddScore(int amount)
-    {
-        // Current score mein received amount add karna
-        score += amount;
 
-        // Check karna ke UIManager available hai
+    // =========================================================
+    // START / RESET LEVEL SCORE
+    // =========================================================
+
+    public void StartLevel(int levelNumber)
+    {
+        // Current level save
+        currentLevelNumber = levelNumber;
+
+        // Har level ka current score 0 se start
+        score = 0;
+
+
+        // UI update
         if (UIManager.instance != null)
         {
-            // UI par updated score show karna
+            // Current score
+            UIManager.instance.UpdateScoreText(score);
+
+            // Isi level ka saved Best Score
+            UIManager.instance.UpdateBestScoreText(
+                GetBestScore()
+            );
+        }
+    }
+
+
+    // =========================================================
+    // ADD SCORE
+    // =========================================================
+
+    public void AddScore(int amount)
+    {
+        // Score add
+        score += amount;
+
+
+        // Current score UI
+        if (UIManager.instance != null)
+        {
             UIManager.instance.UpdateScoreText(score);
         }
+
+
+        // Current level ka previous Best Score
+        int bestScore = GetBestScore();
+
+
+        // Agar current score previous best se zyada hai
+        if (score > bestScore)
+        {
+            // New Best save
+            PlayerPrefs.SetInt(
+                GetBestScoreKey(),
+                score
+            );
+
+            PlayerPrefs.Save();
+
+
+            // Best Score UI update
+            if (UIManager.instance != null)
+            {
+                UIManager.instance.UpdateBestScoreText(
+                    score
+                );
+            }
+        }
+    }
+
+
+    // =========================================================
+    // CURRENT SCORE GETTER
+    // =========================================================
+
+    public int GetCurrentScore()
+    {
+        return score;
+    }
+
+
+    // =========================================================
+    // BEST SCORE GETTER
+    // =========================================================
+
+    public int GetBestScore()
+    {
+        return PlayerPrefs.GetInt(
+            GetBestScoreKey(),
+            0
+        );
+    }
+
+
+    // =========================================================
+    // BEST SCORE PLAYERPREF KEY
+    // =========================================================
+
+    private string GetBestScoreKey()
+    {
+        return "BestScore_Level_" +
+               currentLevelNumber;
     }
 }

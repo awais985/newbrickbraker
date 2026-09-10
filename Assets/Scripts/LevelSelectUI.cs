@@ -149,7 +149,10 @@ public class LevelSelectUI : MonoBehaviour
                 // levelNumber local variable hai,
                 // isliye har button apna correct number save karega
                 button.onClick.AddListener(
-                    () => SelectLevel(levelNumber)
+                    () => { 
+                        SelectLevel(levelNumber);
+                        AudioClipManager.instance.PlayButtonClick();    
+                    }
                 );
             }
         }

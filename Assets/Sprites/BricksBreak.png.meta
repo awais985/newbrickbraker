@@ -1,0 +1,2020 @@
+fileFormatVersion: 2
+guid: c4eee56007225cf4ab4973277f37ccfd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2728429565793320290
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_0
+  - first:
+      213: -3834762841750208373
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_1
+  - first:
+      213: 3642193142336473514
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_2
+  - first:
+      213: 5379723275442203413
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_3
+  - first:
+      213: -4934931027652271341
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_4
+  - first:
+      213: 1217625853347418358
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_5
+  - first:
+      213: -5725166693893355102
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_6
+  - first:
+      213: -1361540319285548001
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_7
+  - first:
+      213: -5984021247683051300
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_8
+  - first:
+      213: 5699490470822157451
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_9
+  - first:
+      213: 8615052946356617370
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_10
+  - first:
+      213: -2311233533007291682
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_11
+  - first:
+      213: -4250920503424204120
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_12
+  - first:
+      213: 1168942520224340946
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_13
+  - first:
+      213: -5070137022032800369
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_14
+  - first:
+      213: 8084984909271421231
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_15
+  - first:
+      213: -6927081438858215509
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_16
+  - first:
+      213: -2252061964110666786
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_17
+  - first:
+      213: -7616180338543213711
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_18
+  - first:
+      213: 6600302057410485307
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_19
+  - first:
+      213: 1124957226289952957
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_20
+  - first:
+      213: -4260785772830346506
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_21
+  - first:
+      213: 7879777509921936426
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_22
+  - first:
+      213: -7434224112500305825
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_23
+  - first:
+      213: 4077389751135359109
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_24
+  - first:
+      213: -5018235381809488603
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_25
+  - first:
+      213: -7011675172640639837
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_26
+  - first:
+      213: -1090895279657554098
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_27
+  - first:
+      213: -1695566046138180957
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_28
+  - first:
+      213: 8238990914480451469
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_29
+  - first:
+      213: 6576566986471579115
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_30
+  - first:
+      213: -3959776285130123649
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_31
+  - first:
+      213: -8722220999984684440
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_32
+  - first:
+      213: -2782818183249257545
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_33
+  - first:
+      213: -1633148960931158403
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_34
+  - first:
+      213: -2681857903587507454
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_35
+  - first:
+      213: -7179614761762083495
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_36
+  - first:
+      213: 2936254799450923258
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_37
+  - first:
+      213: -7853699109112540196
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yellow_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 670
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f4180f1980a054baee5c40777e9a95
+      internalID: 910609260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 492
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c6456e744593044abcae40c884df0d
+      internalID: -588891229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 41
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7316f11719a3d74d9c061b63cf23f25
+      internalID: 1820226393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 854
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9ec328973f87a4bbea8d3c3b22be77
+      internalID: 1252410070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 848
+        width: 468
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a6be88498292447b53be311e812553
+      internalID: -1795884959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 765
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7489f594d5666e4993adc861c3cba85
+      internalID: 1738424251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 673
+        width: 103
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af793ad9ada0204479fd43ba2c806e3d
+      internalID: 296907537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 583
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be57814ac74ff842be48e6c985e4fdf
+      internalID: -425329108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 494
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f100efad149db419214160dd112209
+      internalID: 1102742899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 406
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297581203d2bb14428ac16841865d6ca
+      internalID: -1837209542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 317
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e575f2ed37c7bf428987ca39dbd4e92
+      internalID: -955667470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 227
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3649ee00f1fd34d40afb5103372eaa4a
+      internalID: -746277557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 138
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc6c1a673da16a40aacea98221ec83b
+      internalID: -2089665741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory6
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 44
+        width: 100
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5badabaf89be094fadb126f8b8d3702
+      internalID: -702793569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 844
+        width: 282
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e7c8f3d759a3d4d85e8b53911dd066
+      internalID: 455850899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 752
+        width: 282
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc43457ab5f4a045b82e27bfde5b68b
+      internalID: 239259358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 661
+        width: 282
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ea1722dc670eb4c932166d53dfa0cc
+      internalID: -202476086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 572
+        width: 282
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5050350eb34ad3241b982c9957617a45
+      internalID: 1413944530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 484
+        width: 282
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42057a31ee4b8f146a7c12b77a0371c0
+      internalID: -2089828893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 394
+        width: 282
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241dd1c66abf4594ba96cce4c4cf3fbb
+      internalID: -1613211913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 306
+        width: 282
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f431ebb0f0cded4e87ee0246972d9c0
+      internalID: -823837647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 213
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f940fcc752ac1f24f983ed4cd01a0be5
+      internalID: -1965493600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 123
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f663acb3097ae4795cf356241bb2c7
+      internalID: 1005365502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory7
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 34
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1bcd16a742dd94d99a2b7cb5ba5961
+      internalID: -257264940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 759
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643588a94cb38044981b066ab992b34a
+      internalID: 2085583572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 581
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ddd3aed7aea054bb662fbcc429c95d
+      internalID: 1302041191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 492
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267989d8875ba7648b8e514d6c68af30
+      internalID: 713901692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 403
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd772f9da62488409c212ad4e13b2f3
+      internalID: -1532665798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 136
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ccb9f20906ccd4e98f0ca4e6e68ad2
+      internalID: 1306391910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 41
+        width: 468
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6c70e799f3bd24f8ccf7fdb063d486
+      internalID: 812887536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 314
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611955d812854a64dae85c3860173b08
+      internalID: -179197568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 225
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72470043e2f4a394784e39fa04989cac
+      internalID: 996824606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 847
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e2ec83d18553e4882c06fc0b042ada
+      internalID: 1854616406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 759
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c667671fc7994c419e21cc116ac119e
+      internalID: -1687717299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 581
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd4cfb0c8193fe4085e7744d9fef829
+      internalID: 696884659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 403
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee51016546010a046ac9c8dcf8a333e0
+      internalID: 1735970803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 41
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5950213df676b4949ae4ea866b2d0c3b
+      internalID: 1300036533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 314
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75adec66802db17498d30a06ed2d9dff
+      internalID: 1659256296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 225
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885da2f2d2103fc43aa6563a8b0a79b3
+      internalID: 1545199874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 136
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f74ac9635710e469091408fe3dc873
+      internalID: -398805888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Destory2
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 670
+        width: 243
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b622f101fd1fd4b8ea26b3b35f8956
+      internalID: 1273769140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 849
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66701a043f0d1eb4b8bba5c21995472f
+      internalID: -640383973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 759
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15248da5a65ea764fb22788e242fc71d
+      internalID: 1290482790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 670
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b8a00dd1ffcc342883fb6793859d98
+      internalID: 184560372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 581
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f114b66fcd57efd48accd19e100fd555
+      internalID: 1161419310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 492
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a13a052d173ba649adffa0479cedd18
+      internalID: 434613068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 403
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5ddaec902191446801971d14ca0ec1
+      internalID: 1930354667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 314
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcb7f74bb9105942b0390047dcf1946
+      internalID: 1142043995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 224
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1a948bbcb4d6f43be99653d2e09bef
+      internalID: 1313679777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 136
+        width: 188
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f69249d89be294ab6b1c444e9bdeb0
+      internalID: -1054735826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Destory4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 674
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13ec16000ee445438eb553962ee41a7
+      internalID: 1601481800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 853
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4799ce69d421ee049b1844836cf8f0bd
+      internalID: 1219645562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 763
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d905187808a4047bd64cccc8175c3a
+      internalID: 1271018661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory4
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 226
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d06907cdb8d09a46a3c6e506630c8d5
+      internalID: 62745844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 583
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e838515e1754e4d91c9aee1dd841de
+      internalID: 1048231356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 493
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d3a2e0e73c14d4dabdc8c5b037dc82
+      internalID: -720361036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory4
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 315
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab8a3e29f67d4643a00a11f42f7f199
+      internalID: 540267432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory4
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 43
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbc96f610f3a1d48a9c2f7a7f585415
+      internalID: 1242928280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory4
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 136
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e19eaf8e8a62d4a8d885ec7411c91a
+      internalID: -1183073501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 857
+        width: 118
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fae810862c0a24982ed4026604e496
+      internalID: -478569865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 768
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f657a7c2a01a7c241803a34e6fc82b3a
+      internalID: 69456626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 678
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d605f36515b6e874eb15a4bd2d78254a
+      internalID: -248693284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 588
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba74f898c439ff44b4a7cfcb9bcc5c4
+      internalID: -693684133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 50
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67759140b7f912459c50351a75902e2
+      internalID: -1751845947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_42
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 493
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2abf2c88c52c0545b89ac7518c39d71
+      internalID: -658249110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 670
+        width: 468
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc6edac0884da949a0c8e3b50d70239
+      internalID: 1957588736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory4
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 405
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5127c634487f7d9419255ed4d43d732a
+      internalID: -1193370547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 497
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf56f9f3d3319440a6368a7d08dc8af
+      internalID: -143918136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 409
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9935451c5b698c842a32d265493f759c
+      internalID: 952002814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 319
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1969e5c796c0ebf4c957e37953807c5d
+      internalID: -1148081811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 231
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5439c951cc2c5468b369eddf99da92
+      internalID: -706301865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Destory5
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 142
+        width: 120
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e8186949fb59b43bc13b536ed2ec46
+      internalID: 1633266823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8d942c5ae916bc5428d5a23d453d277d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1672.0,"y":941.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      0: -1221097317
+      Black_Blue_Brick_Left_Break: -2129861025
+      Black_Brick_Right_Break: -322717688
+      Black_Destory1: 812887536
+      Black_Destory2: 1300036533
+      Black_Destory3: 1820226393
+      Black_Destory4: 1242928280
+      Black_Destory5: -1751845947
+      Black_Destory6: -702793569
+      Black_Destory7: -257264940
+      Black_Small_Brick_Left_Break: -1011749859
+      Black_Small_Brick_Right_Break: -1674653725
+      Black_XSmall_Left_Brick_Break: 762857387
+      Black_XSmall_Righ_Brick_Break: -1455538574
+      Blue_Brick_Left_Break: -2142779618
+      Blue_Brick_Right_Break: 819387682
+      Blue_Destory1: 2085583572
+      Blue_Destory2: -1687717299
+      Blue_Destory3: 1290482790
+      Blue_Destory4: 1271018661
+      Blue_Destory5: 69456626
+      Blue_Destory6: 1738424251
+      Blue_Destory7: 239259358
+      Blue_Small_Brick_Left_Break: 1245642147
+      Blue_Small_Brick_Right_Break: -1838091444
+      Blue_XSmall_Left_Brick_Break: -1221097317
+      Blue_XSmall_Right_Brick_Break: -1903991874
+      BricksBreak_100: -2071159563
+      BricksBreak_36: 1957588736
+      BricksBreak_42: -658249110
+      BricksBreak_57: -708771661
+      BricksBreak_60: -814808396
+      BricksBreak_61: -977887244
+      BricksBreak_62: -1494502043
+      BricksBreak_63: 60307871
+      BricksBreak_64: 1308765332
+      BricksBreak_65: -1427792813
+      BricksBreak_66: 282719053
+      BricksBreak_68: -1038161201
+      BricksBreak_69: -756406023
+      BricksBreak_70: -203291834
+      BricksBreak_71: -349760718
+      BricksBreak_72: 1658862626
+      BricksBreak_74: -1945748796
+      BricksBreak_75: -54395772
+      BricksBreak_76: 1523245569
+      BricksBreak_77: 1241475037
+      BricksBreak_78: 1537731684
+      BricksBreak_79: -1916533448
+      BricksBreak_80: 566863445
+      BricksBreak_81: -1397690056
+      BricksBreak_82: -1786720294
+      BricksBreak_83: -468559373
+      BricksBreak_84: -359278164
+      BricksBreak_85: 126105697
+      BricksBreak_86: 1117826203
+      BricksBreak_87: 793168715
+      BricksBreak_88: 1033210493
+      BricksBreak_89: -1361173402
+      BricksBreak_90: -944196925
+      BricksBreak_91: -349011831
+      BricksBreak_92: -1834141105
+      BricksBreak_93: -2095318271
+      BricksBreak_94: -1753183285
+      BricksBreak_95: -530487959
+      BricksBreak_96: 2068378087
+      BricksBreak_97: -1310784529
+      BricksBreak_98: 1053748053
+      BricksBreak_99: -1359012631
+      Gray_Brick_Left_Break: -1006779745
+      Gray_Brick_Right_Break: 592730768
+      Gray_Destory1: 1306391910
+      Gray_Destory2: -398805888
+      Gray_Destory3: -1054735826
+      Gray_Destory4: -1183073501
+      Gray_Destory5: 1633266823
+      Gray_Destory6: -2089665741
+      Gray_Destory7: 1005365502
+      Gray_Small_Brick_Left_Break: 1129833673
+      Gray_Small_Brick_Right_Break: -640613541
+      Gray_XSmall_Left_Brick_Break: 1348658748
+      Gray_XSmall_Right_Brick_Break: -607936339
+      Green_Brick_Left_Break: 290379951
+      Green_Brick_Right_Break: -1186132775
+      Green_Destory1: 1302041191
+      Green_Destory2: 696884659
+      Green_Destory3: 1161419310
+      Green_Destory4: 1048231356
+      Green_Destory5: -693684133
+      Green_Destory6: -425329108
+      Green_Destory7: 1413944530
+      Green_Small_Brick_Left_Break: 1492595556
+      Green_Small_Brick_Right_Break: 1131583040
+      Green_XSmall_Left_Brick_Break: 1873507017
+      Green_XSmall_Right_Brick_Break: -1354748925
+      Orange_Brick_Left_Break: -877143768
+      Orange_Brick_Right_Break: 2096760903
+      Orange_Destory1: -1532665798
+      Orange_Destory2: 1735970803
+      Orange_Destory3: 1930354667
+      Orange_Destory4: -1193370547
+      Orange_Destory5: 952002814
+      Orange_Destory6: -1837209542
+      Orange_Destory7: -1613211913
+      Orange_Small_Brick_Left_Break: -405342797
+      Orange_Small_Brick_Right_Break: -1278791673
+      Orange_XSmall_Left_Brick_Break: 1619757901
+      Orange_XSmall_Rght_Brick_Break: 485573743
+      Pink_Brick_Left_Break: 167943434
+      Pink_Brick_Right_Break: -1385739676
+      Pink_Destory1: -179197568
+      Pink_Destory2: 1659256296
+      Pink_Destory3: 1142043995
+      Pink_Destory4: 540267432
+      Pink_Destory5: -1148081811
+      Pink_Destory6: -955667470
+      Pink_Destory7: -823837647
+      Pink_Small_Brick_Left_Break: -1643481770
+      Pink_Small_Brick_Right_Break: -1712302471
+      Pink_XSmall_Left_Brick_Break: 30445826
+      Pink_XSmall_Right_Brick_Break: 1944839681
+      Purple_Brick_Left_Break: -1643478427
+      Purple_Brick_Right_Break: -922039214
+      Purple_Destory1: 713901692
+      Purple_Destory2: -588891229
+      Purple_Destory3: 434613068
+      Purple_Destory4: -720361036
+      Purple_Destory5: -143918136
+      Purple_Destory6: 1102742899
+      Purple_Destory7: -2089828893
+      Purple_Small_Brick_Left_Break: -1176279413
+      Purple_Small_Brick_Right_Break: -1685579387
+      Purple_XSmall_Left_Brick_Break: 951363518
+      Purple_XSmall_Right_Brick_Break: -711726201
+      Red_Brick_Left_Break: 546867011
+      Red_Brick_Right_Break: 2129237136
+      Red_Destory1: -1795884959
+      Red_Destory2: 1854616406
+      Red_Destory3: -640383973
+      Red_Destory4: 1219645562
+      Red_Destory5: -478569865
+      Red_Destory6: 1252410070
+      Red_Destory7: 455850899
+      Red_Small_Brick_Right_Break: 643267230
+      Red_XSmall_Right_Brick_Break: -1900577362
+      Sky_Bblue_XSmall_Left_Brick_Break: 403831590
+      Sky_Bblue_XSmall_Right_Brick_Break: -953083414
+      Sky_Blue_Brick_Left_Break: -388622767
+      Sky_Blue_Brick_Right_Break: -1615964990
+      Sky_Blue_Destory1: 996824606
+      Sky_Blue_Destory2: 1545199874
+      Sky_Blue_Destory3: 1313679777
+      Sky_Blue_Destory4: 62745844
+      Sky_Blue_Destory5: -706301865
+      Sky_Blue_Destory6: -746277557
+      Sky_Blue_Destory7: -1965493600
+      Sky_Blue_Small_Brick_Left_Break: 755992801
+      Sky_Blue_Small_Brick_Right_Break: -638747830
+      Yellow: -1186132775
+      Yellow_Brick_Left_Break: 2113358059
+      Yellow_Brick_Right_Break: 651414775
+      Yellow_Destory1: 910609260
+      Yellow_Destory2: 1273769140
+      Yellow_Destory3: 184560372
+      Yellow_Destory4: 1601481800
+      Yellow_Destory5: -248693284
+      Yellow_Destory6: 296907537
+      Yellow_Destory7: -202476086
+      Yellow_Small_Brick_Left_Break: -1356510998
+      Yellow_Small_Brick_Right_Break: 1160728306
+      Yellow_XSmallLeft_Brick_Break: 325478676
+      Yellow_XSmall_Bri+ck_Break: 325478676
+      Yellow_XSmall_Left_Brick_Break: 325478676
+      Yellow_XSmall_Right_Brick_Break: 764248140
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

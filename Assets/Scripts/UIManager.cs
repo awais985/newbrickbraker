@@ -20,6 +20,9 @@ public class UIManager : MonoBehaviour
     // Current score show karne wala TMP text
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    // Best score show karne wala TMP text
+    [SerializeField] private TextMeshProUGUI[] bestScoreTexts;
+
     // Agar text-based lives bhi use karni hain
     [SerializeField] private TextMeshProUGUI liveText;
 
@@ -99,11 +102,19 @@ public class UIManager : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text =
-                "Score: " + score;
+            scoreText.text = score.ToString();
         }
     }
-
+    public void UpdateBestScoreText(int bestScore)
+    {
+        foreach (TextMeshProUGUI text in bestScoreTexts)
+        {
+            if (text != null)
+            {
+                text.text = "Best: " + bestScore;
+            }
+        }
+    }
 
     // =========================================================
     // LIVES UI
@@ -259,7 +270,10 @@ public class UIManager : MonoBehaviour
             AudioClipManager.instance
                 .PlayPanelSound();
         }
-
+        if (pausePanel.activeSelf)
+        {
+            pausePanel.SetActive(false);
+        }
         SetPanelState(
             settingsPanel,
             true

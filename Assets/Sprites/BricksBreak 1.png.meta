@@ -1,0 +1,3072 @@
+fileFormatVersion: 2
+guid: 70e66ed0df953e34dbdf52f11800f8fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2728429565793320290
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_0
+  - first:
+      213: -3834762841750208373
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_1
+  - first:
+      213: 3642193142336473514
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_2
+  - first:
+      213: 5379723275442203413
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_3
+  - first:
+      213: -4934931027652271341
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_4
+  - first:
+      213: 1217625853347418358
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_5
+  - first:
+      213: -5725166693893355102
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_6
+  - first:
+      213: -1361540319285548001
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_7
+  - first:
+      213: -5984021247683051300
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_8
+  - first:
+      213: 5699490470822157451
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_9
+  - first:
+      213: 8615052946356617370
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_10
+  - first:
+      213: -2311233533007291682
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_11
+  - first:
+      213: -4250920503424204120
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_12
+  - first:
+      213: 1168942520224340946
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_13
+  - first:
+      213: -5070137022032800369
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_14
+  - first:
+      213: 8084984909271421231
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_15
+  - first:
+      213: -6927081438858215509
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_16
+  - first:
+      213: -2252061964110666786
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_17
+  - first:
+      213: -7616180338543213711
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_18
+  - first:
+      213: 6600302057410485307
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_19
+  - first:
+      213: 1124957226289952957
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_20
+  - first:
+      213: -4260785772830346506
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_21
+  - first:
+      213: 7879777509921936426
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_22
+  - first:
+      213: -7434224112500305825
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_23
+  - first:
+      213: 4077389751135359109
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_24
+  - first:
+      213: -5018235381809488603
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_25
+  - first:
+      213: -7011675172640639837
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_26
+  - first:
+      213: -1090895279657554098
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_27
+  - first:
+      213: -1695566046138180957
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_28
+  - first:
+      213: 8238990914480451469
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_29
+  - first:
+      213: 6576566986471579115
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_30
+  - first:
+      213: -3959776285130123649
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_31
+  - first:
+      213: -8722220999984684440
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_32
+  - first:
+      213: -2782818183249257545
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_33
+  - first:
+      213: -1633148960931158403
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_34
+  - first:
+      213: -2681857903587507454
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_35
+  - first:
+      213: -7179614761762083495
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_36
+  - first:
+      213: 2936254799450923258
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_37
+  - first:
+      213: -7853699109112540196
+    second: ChatGPT Image Sep 7, 2026, 11_41_35 AM_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 848
+        width: 226
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4504ad7013bcb4ea5d999ee25de0be
+      internalID: 546867011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 848
+        width: 226
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c32068dd4751a4eb1aa0cde4aee5f3
+      internalID: 2129237136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 848
+        width: 226
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f4180f1980a054baee5c40777e9a95
+      internalID: 910609260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 760
+        width: 226
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7275c5e181e889641a892a050ff39374
+      internalID: -2142779618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 760
+        width: 225
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45218949e5efc6e42b78516724132d2d
+      internalID: 819387682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 673
+        width: 226
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5489473fdf2ee04f9a80ffd3cb79e1c
+      internalID: 2113358059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 672
+        width: 227
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fa3e3bf65d7ca42be7669b6017af49
+      internalID: 651414775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 582
+        width: 226
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e13fa7ada261944ad856e5dfd6c81e
+      internalID: 290379951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 581
+        width: 227
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8ecfab10d7dc04da78459ea76ccee5
+      internalID: -1186132775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 491
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9cb356344fb0949a8caa1d98940fd9
+      internalID: -1643478427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 491
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0920152f5e9f48e4ea555c3d1455d45c
+      internalID: -922039214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 403
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023d5a56c4a4d62459b818c329653ba5
+      internalID: 2096760903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 315
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e584a97e9dda954bb2c4d4c89ff608e
+      internalID: 167943434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 403
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7868739b371a6514f99ddb0430addb1c
+      internalID: -877143768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 315
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1a923969d24624a84016a524062105
+      internalID: -1385739676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 225
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f067199c2a293408e387a06f1d9357
+      internalID: -388622767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 225
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03397e74e8a56974eb6a97ceabaaa69a
+      internalID: -1615964990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 137
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f0561a98168a84e90a3d95065a8a69
+      internalID: -1006779745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 137
+        width: 227
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548b0169c1027414da4024634d791c3c
+      internalID: 592730768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Blue_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 42
+        width: 228
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae60735b1bb8d934e8f6b365a3610556
+      internalID: -2129861025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 42
+        width: 228
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251e89a973c422047a6d3c02ecb589c1
+      internalID: -322717688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 847
+        width: 117
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c6456e744593044abcae40c884df0d
+      internalID: -588891229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 846
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ae3b77a5a198d419ffdd499f897190
+      internalID: 643267230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 759
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bfb8872b5cc9242b844b107b3a04dd
+      internalID: -1838091444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 670
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06f1aa499766694db9f1416eb1609ed
+      internalID: 1160728306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 579
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd448b131c1b404aa56a3c036cbf14b
+      internalID: 1131583040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 669
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821b612ffd4ec7e4a93b989b754a6691
+      internalID: -1356510998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 758
+        width: 117
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d13f5e892e7824ab9d4e90bc29a3b1
+      internalID: 1245642147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 40
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0581170c8320b72419d4f15e6a522272
+      internalID: -1674653725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 488
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94b3b24f5738cf428c9db3141ec16fd
+      internalID: -1685579387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 400
+        width: 104
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9abe5e5ecf5b14aa4abdd43a0f4d12
+      internalID: -1278791673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 313
+        width: 104
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9964fcc74340dc840937079b03f7bebb
+      internalID: -1712302471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 224
+        width: 104
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee158536da0d70743af6c5816ed80b2d
+      internalID: -638747830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Small_Brick_Right_Break
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 133
+        width: 104
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19dd0f2faff80064ca72b89003520982
+      internalID: -640613541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 581
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1a2050428538248bc5985090708a55
+      internalID: 1492595556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 493
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc282321b2766645b798cdff101ce39
+      internalID: -1176279413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 404
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab127f1ed68773c4a9cd0d766c811539
+      internalID: -405342797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 316
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f907bd9af439b0e4aa5e69098932f2ad
+      internalID: -1643481770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Blue_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 228
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af30f9639784ed41b10fb2577ae8f94
+      internalID: 755992801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 135
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c91ce26b6b7f642b7c5d817e16164a
+      internalID: 1129833673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Small_Brick_Left_Break
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 36
+        width: 117
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a812da8d3306035449b575e28cbf710b
+      internalID: -1011749859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 849
+        width: 80
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7316f11719a3d74d9c061b63cf23f25
+      internalID: 1820226393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 763
+        width: 83
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72c1040e6a23d1479b296f9cb41746c
+      internalID: -1903991874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blue_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 761
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8ae57e4fce42d4e85932152d92b702
+      internalID: -1221097317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 671
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faa57f01ed161e4dbcf56bf9174ffab
+      internalID: 325478676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 581
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe6443d86c611742b8a8e3a9e59e6df
+      internalID: 1873507017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 490
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d444c5ee11005604493c1f3c2ac13ded
+      internalID: 951363518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 402
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb0a6bd27920d40afba959ae062e62
+      internalID: 1619757901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 314
+        width: 79
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e452028e21ccd4418082b0b5dd0767e
+      internalID: 30445826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Bblue_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 224
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06bb112ec3b6f4aa67558181554e39
+      internalID: 403831590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 135
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99c44889c2e49f4cb7d32fea6417e78
+      internalID: 1348658748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_XSmall_Left_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 40
+        width: 80
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd63b5df36a42724ab4988cb96c6a385
+      internalID: 762857387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 852
+        width: 82
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2552cd889b2e04bad6586e1d12187a
+      internalID: -1900577362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_XSmall_Righ_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 42
+        width: 83
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6b1b9bdc26786468069e8ee2e8b90b
+      internalID: -1455538574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 672
+        width: 83
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ca15c8303cabe4181592d1020cff50
+      internalID: 764248140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 582
+        width: 83
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8096aef183e2e045b6e349da1a915c7
+      internalID: -1354748925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 492
+        width: 83
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d2cdd0789637d43997a869d9825081
+      internalID: -711726201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_XSmall_Rght_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 403
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a062132667ad54d9eb7ef5fc60275c
+      internalID: 485573743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_57
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 314
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f1749145016c14cb58f3172dae2dd1
+      internalID: -708771661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_Bblue_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 224
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440621c330470174fbfcfccbe4f4f680
+      internalID: -953083414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 135
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceef55d85d413d24eaa66e382db66790
+      internalID: -607936339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_62
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 45
+        width: 67
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba07b0fd4081689439761ac2960f3b06
+      internalID: -1494502043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_60
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 854
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122e599f2ca040c469c8571f58d3444a
+      internalID: -814808396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_61
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 766
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8405b94f8258d6e4ba71683d38aad149
+      internalID: -977887244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_63
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 675
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ac98af28eca0a4a8f68e0454e088fc
+      internalID: 60307871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_64
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 584
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e2306da445e43469655869efa223c9
+      internalID: 1308765332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_65
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 495
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb763cc1ba127f478c0d62118a05453
+      internalID: -1427792813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_66
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 405
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc566efdedd4f3248a338c3e01feb3e0
+      internalID: 282719053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_XSmall_Right_Brick_Break
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 317
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7721938523a89804c965c7f94ad86a8c
+      internalID: 1944839681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_68
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 226
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a9acdeea7b5d54a8b5cbd190fc820c
+      internalID: -1038161201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_69
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 137
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442b1e2dc09af924f8fe38612d91c3bf
+      internalID: -756406023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_70
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 872
+        width: 60
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf53e587820c6ad44806f4e269732459
+      internalID: -203291834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_71
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 894
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4575cabe24ec89948b56f0dfc4d39bf6
+      internalID: -349760718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_72
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 859
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3916258e5a812294e9033aef60ef8027
+      internalID: 1658862626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_73
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 854
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9ec328973f87a4bbea8d3c3b22be77
+      internalID: 1252410070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_74
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 782
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18625477812762428fe6f8ea80f1fc2
+      internalID: -1945748796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_75
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 692
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa806d26b3d4b742b48d2d4cbd97d6b
+      internalID: -54395772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_76
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 602
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d9c2d3e52b112408431ea0b89a853c
+      internalID: 1523245569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_77
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 511
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7df1080496d8241b574865f2476015
+      internalID: 1241475037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_78
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 423
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bf7e4e7b467e2419201924d58532c2
+      internalID: 1537731684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_79
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 334
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fb65b8d0e49df49b1e2fe547ed9190
+      internalID: -1916533448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_80
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 245
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b136fae5c491d514c9335efbab2d052f
+      internalID: 566863445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_81
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 154
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf5a47e5a1f4ab438b4784b88bd07f6
+      internalID: -1397690056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_82
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 61
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813e7a573608851429a1beaa37e5604a
+      internalID: -1786720294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_83
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 802
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca931053b7dc6d544994a35d0bbc888c
+      internalID: -468559373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_84
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 712
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3241904e640c8c644b292da09cc5998c
+      internalID: -359278164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_85
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 622
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57d370f4c9811d49b9149d5102940e8
+      internalID: 126105697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_86
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 532
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883b53c2a461341459bc84c98fcd7103
+      internalID: 1117826203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_87
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 445
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b82809d00d19a14993b5c2151777b54
+      internalID: 793168715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_88
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 353
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94ff866209217d46951965133784da2
+      internalID: 1033210493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_89
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 265
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c64e07a8596ae442b95db4d73a5ff21
+      internalID: -1361173402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_90
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 176
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4182e61a75e762409f6eea927d3a9ad
+      internalID: -944196925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_91
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 84
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a186abb221fb0f40a933d11132ceda7
+      internalID: -349011831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_92
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 772
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65321e92e182654d995651101d86e42
+      internalID: -1834141105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_93
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 681
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a475fd76ca7d5bb49b018eb12ef2b1f1
+      internalID: -2095318271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_94
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 591
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d99c28fa48f7f4db21df2350eb9dcd
+      internalID: -1753183285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_95
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 501
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9322d89735d2447829f310f37eb16c
+      internalID: -530487959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_96
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 412
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d9f743c05466d41bed49cfb515cb79
+      internalID: 2068378087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_97
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 323
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28ce743375c8de4196192d7376f9775
+      internalID: -1310784529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_98
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 234
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c845df397f8e540a6d782b24ae777f
+      internalID: 1053748053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_99
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 142
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee636f4cb443a34492494093c68ab40
+      internalID: -1359012631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_100
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 50
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2d212a6791d1c4a9dd5ff0ebaa5826
+      internalID: -2071159563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_101
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 848
+        width: 226
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a6be88498292447b53be311e812553
+      internalID: -1795884959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_102
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 765
+        width: 101
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7489f594d5666e4993adc861c3cba85
+      internalID: 1738424251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_103
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 673
+        width: 103
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af793ad9ada0204479fd43ba2c806e3d
+      internalID: 296907537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_104
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 583
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be57814ac74ff842be48e6c985e4fdf
+      internalID: -425329108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_105
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 494
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f100efad149db419214160dd112209
+      internalID: 1102742899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_106
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 406
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297581203d2bb14428ac16841865d6ca
+      internalID: -1837209542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_107
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 317
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e575f2ed37c7bf428987ca39dbd4e92
+      internalID: -955667470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_108
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 227
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3649ee00f1fd34d40afb5103372eaa4a
+      internalID: -746277557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_109
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 138
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc6c1a673da16a40aacea98221ec83b
+      internalID: -2089665741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_110
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 44
+        width: 100
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5badabaf89be094fadb126f8b8d3702
+      internalID: -702793569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_111
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 844
+        width: 282
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e7c8f3d759a3d4d85e8b53911dd066
+      internalID: 455850899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_112
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 752
+        width: 282
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc43457ab5f4a045b82e27bfde5b68b
+      internalID: 239259358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_113
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 661
+        width: 282
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ea1722dc670eb4c932166d53dfa0cc
+      internalID: -202476086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_114
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 572
+        width: 282
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5050350eb34ad3241b982c9957617a45
+      internalID: 1413944530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_115
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 484
+        width: 282
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42057a31ee4b8f146a7c12b77a0371c0
+      internalID: -2089828893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_116
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 394
+        width: 282
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241dd1c66abf4594ba96cce4c4cf3fbb
+      internalID: -1613211913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_117
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 306
+        width: 282
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f431ebb0f0cded4e87ee0246972d9c0
+      internalID: -823837647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_118
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 213
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f940fcc752ac1f24f983ed4cd01a0be5
+      internalID: -1965493600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_119
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 123
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f663acb3097ae4795cf356241bb2c7
+      internalID: 1005365502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BricksBreak_120
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 34
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1bcd16a742dd94d99a2b7cb5ba5961
+      internalID: -257264940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8d942c5ae916bc5428d5a23d453d277d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1672.0,"y":941.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      0: -1221097317
+      Black_Blue_Brick_Left_Break: -2129861025
+      Black_Brick_Right_Break: -322717688
+      Black_Small_Brick_Left_Break: -1011749859
+      Black_Small_Brick_Right_Break: -1674653725
+      Black_XSmall_Left_Brick_Break: 762857387
+      Black_XSmall_Righ_Brick_Break: -1455538574
+      Blue_Brick_Left_Break: -2142779618
+      Blue_Brick_Right_Break: 819387682
+      Blue_Small_Brick_Left_Break: 1245642147
+      Blue_Small_Brick_Right_Break: -1838091444
+      Blue_XSmall_Left_Brick_Break: -1221097317
+      Blue_XSmall_Right_Brick_Break: -1903991874
+      BricksBreak_1: 910609260
+      BricksBreak_100: -2071159563
+      BricksBreak_101: -1795884959
+      BricksBreak_102: 1738424251
+      BricksBreak_103: 296907537
+      BricksBreak_104: -425329108
+      BricksBreak_105: 1102742899
+      BricksBreak_106: -1837209542
+      BricksBreak_107: -955667470
+      BricksBreak_108: -746277557
+      BricksBreak_109: -2089665741
+      BricksBreak_110: -702793569
+      BricksBreak_111: 455850899
+      BricksBreak_112: 239259358
+      BricksBreak_113: -202476086
+      BricksBreak_114: 1413944530
+      BricksBreak_115: -2089828893
+      BricksBreak_116: -1613211913
+      BricksBreak_117: -823837647
+      BricksBreak_118: -1965493600
+      BricksBreak_119: 1005365502
+      BricksBreak_120: -257264940
+      BricksBreak_57: -708771661
+      BricksBreak_60: -814808396
+      BricksBreak_61: -977887244
+      BricksBreak_62: -1494502043
+      BricksBreak_63: 60307871
+      BricksBreak_64: 1308765332
+      BricksBreak_65: -1427792813
+      BricksBreak_66: 282719053
+      BricksBreak_68: -1038161201
+      BricksBreak_69: -756406023
+      BricksBreak_70: -203291834
+      BricksBreak_71: -349760718
+      BricksBreak_72: 1658862626
+      BricksBreak_73: 1252410070
+      BricksBreak_74: -1945748796
+      BricksBreak_75: -54395772
+      BricksBreak_76: 1523245569
+      BricksBreak_77: 1241475037
+      BricksBreak_78: 1537731684
+      BricksBreak_79: -1916533448
+      BricksBreak_80: 566863445
+      BricksBreak_81: -1397690056
+      BricksBreak_82: -1786720294
+      BricksBreak_83: -468559373
+      BricksBreak_84: -359278164
+      BricksBreak_85: 126105697
+      BricksBreak_86: 1117826203
+      BricksBreak_87: 793168715
+      BricksBreak_88: 1033210493
+      BricksBreak_89: -1361173402
+      BricksBreak_90: -944196925
+      BricksBreak_91: -349011831
+      BricksBreak_92: -1834141105
+      BricksBreak_93: -2095318271
+      BricksBreak_94: -1753183285
+      BricksBreak_95: -530487959
+      BricksBreak_96: 2068378087
+      BricksBreak_97: -1310784529
+      BricksBreak_98: 1053748053
+      BricksBreak_99: -1359012631
+      Gray_Brick_Left_Break: -1006779745
+      Gray_Brick_Right_Break: 592730768
+      Gray_Small_Brick_Left_Break: 1129833673
+      Gray_Small_Brick_Right_Break: -640613541
+      Gray_XSmall_Left_Brick_Break: 1348658748
+      Gray_XSmall_Right_Brick_Break: -607936339
+      Green_Brick_Left_Break: 290379951
+      Green_Brick_Right_Break: -1186132775
+      Green_Small_Brick_Left_Break: 1492595556
+      Green_Small_Brick_Right_Break: 1131583040
+      Green_XSmall_Left_Brick_Break: 1873507017
+      Green_XSmall_Right_Brick_Break: -1354748925
+      Orange_Brick_Left_Break: -877143768
+      Orange_Brick_Right_Break: 2096760903
+      Orange_Small_Brick_Left_Break: -405342797
+      Orange_Small_Brick_Right_Break: -1278791673
+      Orange_XSmall_Left_Brick_Break: 1619757901
+      Orange_XSmall_Rght_Brick_Break: 485573743
+      Pink_Brick_Left_Break: 167943434
+      Pink_Brick_Right_Break: -1385739676
+      Pink_Small_Brick_Left_Break: -1643481770
+      Pink_Small_Brick_Right_Break: -1712302471
+      Pink_XSmall_Left_Brick_Break: 30445826
+      Pink_XSmall_Right_Brick_Break: 1944839681
+      Purple_Brick_Left_Break: -1643478427
+      Purple_Brick_Right_Break: -922039214
+      Purple_Small_Brick_Left_Break: -1176279413
+      Purple_Small_Brick_Right_Break: -1685579387
+      Purple_XSmall_Left_Brick_Break: 951363518
+      Purple_XSmall_Right_Brick_Break: -711726201
+      Red_Brick_Left_Break: 546867011
+      Red_Brick_Right_Break: 2129237136
+      Red_Small_Brick_Left_Break: -588891229
+      Red_Small_Brick_Right_Break: 643267230
+      Red_XSmall_Left_Brick_Break: 1820226393
+      Red_XSmall_Right_Brick_Break: -1900577362
+      Sky_Bblue_XSmall_Left_Brick_Break: 403831590
+      Sky_Bblue_XSmall_Right_Brick_Break: -953083414
+      Sky_Blue_Brick_Left_Break: -388622767
+      Sky_Blue_Brick_Right_Break: -1615964990
+      Sky_Blue_Small_Brick_Left_Break: 755992801
+      Sky_Blue_Small_Brick_Right_Break: -638747830
+      Yellow: -1186132775
+      Yellow_Brick_Left_Break: 2113358059
+      Yellow_Brick_Right_Break: 651414775
+      Yellow_Small_Brick_Left_Break: -1356510998
+      Yellow_Small_Brick_Right_Break: 1160728306
+      Yellow_XSmallLeft_Brick_Break: 325478676
+      Yellow_XSmall_Bri+ck_Break: 325478676
+      Yellow_XSmall_Left_Brick_Break: 325478676
+      Yellow_XSmall_Right_Brick_Break: 764248140
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

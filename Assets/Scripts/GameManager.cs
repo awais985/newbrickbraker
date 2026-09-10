@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Extra Life Test")]
     [SerializeField] private GameObject extraLife;
-
+    [SerializeField] private DeadZone deadZone;
     private Coroutine extraLifeGenerate;
 
 
@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
     // jab ek hi ball active ho
     public bool CanSpawnMultiBall()
     {
-        return activeBalls == 1;
+        return activeBalls < 3;
     }
 
 
@@ -232,10 +232,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
 
-
         if (LevelManager.instance != null)
         {
             LevelManager.instance.RestartCurrentLevel();
+        }
+
+        if(UIManager.instance != null)
+        {
+            UIManager.instance.HidePausePanel();
         }
 
 
@@ -420,13 +424,6 @@ public class GameManager : MonoBehaviour
         lives--;
 
 
-        // Lose-life sound sirf ek baar
-        if (AudioClipManager.instance != null)
-        {
-            AudioClipManager.instance.PlayLoseLife();
-        }
-
-
         //Debug.Log("Lives Remaining: " + lives);
 
 
@@ -492,6 +489,14 @@ public class GameManager : MonoBehaviour
 
 
     // =========================================================
+    // BOTTOMSHIELD
+    // =========================================================
+    public void BottomShield() {
+        deadZone.BottomShield();
+    }
+
+
+    // =========================================================
     // PAUSE
     // =========================================================
 
@@ -525,13 +530,29 @@ public class GameManager : MonoBehaviour
         // Normal game speed
         Time.timeScale = 1f;
 
-
         if (UIManager.instance != null)
         {
             UIManager.instance.HidePausePanel();
         }
     }
 
+    public void ShowSettings()
+    {
+        PlayButtonSound();
+        if (UIManager.instance != null)
+        {
+            UIManager.instance.ShowSettingPanel();
+        }
+    }
+
+    public void BackSettings() {
+        PlayButtonSound();
+        if (UIManager.instance != null)
+        {
+            UIManager.instance.HideSettingPanel();
+            UIManager.instance.ShowPausePanel();
+        }
+    }
 
     // =========================================================
     // BUTTON SOUND

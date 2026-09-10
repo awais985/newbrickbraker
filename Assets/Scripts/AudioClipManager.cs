@@ -35,6 +35,9 @@ public class AudioClipManager : MonoBehaviour
     // Boundary / wall hit sound
     [SerializeField] private AudioClip boundaryHit;
 
+    // Ball fall sound
+    [SerializeField] private AudioClip ballFall;
+
     // Life lose sound
     [SerializeField] private AudioClip loseLife;
 
@@ -71,12 +74,6 @@ public class AudioClipManager : MonoBehaviour
         // AudioClipManager destroy nahi hoga
         DontDestroyOnLoad(gameObject);
     }
-
-    private void Update()
-    {
-        Debug.Log(gameObject);
-    }
-
 
     // =========================================================
     // BUTTON SOUND
@@ -124,7 +121,7 @@ public class AudioClipManager : MonoBehaviour
 
     public void PlayBoundaryHit()
     {
-        Debug.Log("Heelo");
+        Debug.Log("sound ready for use");
         PlayClip(boundaryHit);
     }
 
@@ -158,6 +155,15 @@ public class AudioClipManager : MonoBehaviour
         PlayClip(gameOver);
     }
 
+
+    // =========================================================
+    // Ball FALL SOUND
+    // =========================================================
+
+    public void PlayBallFall()
+    {
+        PlayClip(ballFall);
+    }
 
     // =========================================================
     // HELPER METHOD
